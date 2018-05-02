@@ -1,0 +1,259 @@
+.site-header {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  transition: background-color .3s ease-out;
+  &--is-expanded {
+    background-color: rgba($mainBlue, .55);
+  }
+  @mixin atMedium {
+    position: fixed;
+    &--dark {
+      background-color: rgba(23, 51, 72, .85);
+    }
+  }
+  &__btn-container {
+    @mixin atMedium {
+      float: right;
+    }
+  }
+  &--logo {
+    width: 85%;
+    height: 100%;
+    display: inline-block;
+    @mixin atSmaller {
+      width: 50%;
+    }
+    @mixin atMedium {
+      width: 75%;
+    }
+    @mixin atLarge {
+      width: 70%;
+    }
+    @mixin atLarger {
+      width: 65%;
+    }
+  }
+  &--logo-img {
+    display: inline-block;
+    img {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      height: 40px;
+      @mixin atSmall {
+        top: 5px;
+        left: 10px;
+        height: 45px;
+      }
+      @mixin atMedium {
+        left: 20px;
+        height: 70px;
+      }
+      @mixin atLarge {
+        left: 40px;
+        height: 70px;
+      }
+    }
+  }
+  &--logo-info {
+    display: inline-block;
+    margin: 8px 0px 0px 80px;
+    @mixin atSmaller {
+      margin: 8px 0px 0px 80px;
+    }
+    @mixin atSmall {
+      margin: 8px 0px 0px 100px;
+    }
+    @mixin atMedium {
+      margin: 30px 0px 0px 150px;
+    }
+    @mixin atLarge {
+      margin: 30px 150px;
+    }
+    .eng {
+      margin-right: 16px;
+      font-weight: bold;
+      font-family: 'Arial', serif;
+      font-size: 18px;
+      display: block;
+      @mixin atMedium {
+        display: inline-block;
+        margin-right: 16px;
+        font-weight: bold;
+        font-family: 'Arial', serif;
+        font-size: 18px;
+      }
+    }
+    .rus {
+      font-family: Arial, serif;
+      font-size: 16px;
+      display: block;
+      @mixin atMedium {
+        display: inline-block;
+        font-family: Arial, serif;
+        font-size: 18px;
+      }
+    }
+  }
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(.8);
+    transition: transform .3s ease-out;
+    transform-origin: 50% 0%;
+    /*background-color: $mainBlue;*/
+    padding: 0px 36px;
+    @mixin atMedium {
+      left: auto;
+      transform: translateX(0);
+      .site-header--dark & {
+        transform: scale(.56);
+      }
+    }
+  }
+  &__logo__graphic {
+    text-indent: -9999px;
+  }
+  &__menu-icon {
+    width: 20px;
+    height: 19px;
+    position: absolute;
+    z-index: 10;
+    top: 14px;
+    right: 10px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: #000;
+      transform-origin: 0% 0%;
+      transition: transform .3s ease-out;
+    }
+    &__middle {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: #000;
+      transition: all .3s ease-out;
+      transform-origin: 0 50%;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: #000;
+      transform-origin: 0% 100%;
+      transition: transform .3s ease-out;
+    }
+    @mixin atMedium {
+      display: none;
+    }
+  }
+  &__menu-icon--close-x {
+    &::before {
+      transform: rotate(45deg) scaleX(1.25);
+    }
+    .site-header__menu-icon__middle {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+    &::after {
+      transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+    }
+  }
+  &__menu-content {
+    opacity: 0;
+    transform: scale(1.2);
+    transition: all .3s ease-out;
+    position: relative;
+    z-index: -10;
+    padding-top: 90px;
+    text-align: center;
+    @mixin atMedium {
+      background-color: #ffffff;
+      opacity: 1;
+      z-index: 1;
+      padding-top: 0;
+      transform: scale(1);
+    }
+    .list li {
+      display: inline-block;
+      list-style: none;
+      display: inline-block;
+      padding-right: 7px;
+      a {
+        font-size: 18px;
+        color: #000;
+      }
+      @mixin atMedium {
+        padding-right: 45px;
+      }
+      @mixin atLarge {
+        padding-right: 90px;
+      }
+    }
+    li:last-child {
+      padding-right: 0;
+      @mixin atMedium {
+        padding-right: 45px;
+      }
+    }
+    &--is-visible {
+      opacity: 1;
+      z-index: 1;
+      transform: scale(1);
+    }
+  }
+  &__contacts-content {
+    opacity: 0;
+    transform: scale(1.2);
+    transition: all .3s ease-out;
+    position: relative;
+    z-index: -10;
+    padding-top: 90px;
+    text-align: center;
+    @mixin atMedium {
+      display: inline-block;
+      span {
+        font-weight: bolder;
+        display: block;
+        margin:15px 0px 5px 0px;
+        @mixin atLarger{
+          display: inline-block;
+        margin-right: 25px;
+      }
+
+      }
+      a {
+        color: #000;
+        font-size: 18px;
+      }
+      opacity: 1;
+      z-index: 1;
+      padding-top: 0;
+      transform: scale(1);
+      background-color: $LightGrey;
+    }
+    @mixin atLarge {
+      width:28%;
+    }
+    @mixin atLarger {
+      width:33%;
+    }
+    &--is-visible {
+      opacity: 1;
+      z-index: 1;
+      transform: scale(1);
+    }
+  }
+}

@@ -1,0 +1,89 @@
+.wrapper {
+  overflow: hidden;
+  padding-left: 0px;
+  padding-right: 0px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  &--medium {
+    max-width: 976px;
+  }
+  &--narrow {
+    max-width: 470px;
+  }
+  &--medium {
+    max-width: 60%;
+  }
+  &--large {
+      max-width: 95%;
+  @mixin atSmaller {
+        max-width: 90%;
+      }
+  @mixin atMedium {
+    max-width: 95%;
+  }
+    @mixin atXLarge {
+      max-width: 90%;
+    }
+    @mixin atXXLarge {
+      max-width: 85%;
+    }
+  }
+  &--no-padding-until-medium {
+    padding-left: 0;
+    padding-right: 0;
+    @mixin atMedium {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+  &--no-padding-until-large {
+    padding-left: 0;
+    padding-right: 0;
+    @mixin atLarge {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+  .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &--b-margin {
+    margin-bottom: 1rem;
+    @mixin atSmall {
+      margin-bottom: 3.875rem;
+    }
+  }
+  &--bg-White {
+    background-color: $mainWhite;
+    height: 0px;
+    @mixin atMedium {
+      height: 50px;
+    }
+  }
+  &--bg-White-Large {
+    background-color: $mainWhite;
+    height: 100px;
+  }
+
+
+  &--bg-LightGrey {
+    background-color: $LightGrey;
+    height: 50px;
+    @mixin atMedium {
+      height: 75px;
+    }
+  }
+  &--bg-Grey {
+    background-color: #f7f7f7;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  &--bg-DarkGrey {
+    padding: 5px;
+    background-color: #969696;
+    text-align: center;
+  }
+}
