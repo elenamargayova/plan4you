@@ -5,8 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <!--build:css assets/styles/styles.css-->
+  <link rel="stylesheet" href="temp/styles/styles.css">
+  <!--endbuild-->
+
 </head>
 <body>
-  <h1>New Project</h1>
+<header class="header">
+ <nav class="navigation">
+    <div class="navitem"><a href="#home">Главная</a></div>
+    <div class="navitem"><a href="#content">Содержание</a></div>
+    <div class="navitem"><a href="#advantages">Преимущества</a></div>
+    <div class="navitem"><a href="#wrap">Упаковка</a></div>
+    <div class="navitem"><a href="#contacts">Контакты</a></div>
+ </nav>
+</header>
+  <div id="home" class="container">
+    <picture>
+    <source srcset="assets/images/large-hero--large.jpg 1920w, assets/images/large-hero--large-hi-dpi.jpg 3840w" media="(min-width:1380px)">
+    <source srcset="assets/images/large-hero--medium.jpg 1380w, assets/images/large-hero--medium-hi-dpi.jpg 2760w" media="(min-width:990px)">
+    <source srcset="assets/images/large-hero--small.jpg 990w, assets/images/large-hero--small-hi-dpi.jpg 1980w" media="(min-width:640px)">
+    <img srcset="assets/images/large-hero--smaller.jpg 640w, assets/images/large-hero--smaller-hi-dpi.jpg 1280w" alt="Peonies and notepad" class="large-hero__image">
+  </picture>
+  </div>
+  <div class="text-container">
+    <div class="corner corner-top-left"></div>
+    <div class="corner corner-top-right"></div>
+    <div class="corner corner-bottom-left"></div>
+    <div class="corner corner-bottom-right"></div>
+    <span>&#9829;&nbsp;&#10084;&nbsp;&nbsp;</span>Сделай сегодня приключением!<span>&nbsp;&nbsp;&#10084;&nbsp;&#9829;</span></div>
+  <div id="advantages" class="container"></div>
+  <div id="content" class="container"></div>
+  <div class="text-container">
+    <div class="corner corner-top-left"></div>
+    <div class="corner corner-top-right"></div>
+    <div class="corner corner-bottom-left"></div>
+    <div class="corner corner-bottom-right"></div>
+    <span>&#9829;&nbsp;&#10084;&nbsp;&nbsp;</span>Где любовь, там и жизнь!<span>&nbsp;&nbsp;&#10084;&nbsp;&#9829;</span></div>
+  <div id="wrap" class="container"></div>
+  <div id="contacts" class="container"></div>
+  <footer class="text-container footer">
+    <div class="corner corner-top-left"></div>
+    <div class="corner corner-top-right"></div>
+    <div class="corner corner-bottom-left"></div>
+    <div class="corner corner-bottom-right"></div>
+  <img src="assets/images/logo.png" alt="logo" />
+  </footer>
 </body>
 </html>
+
+
+<!-- <div class="container">
+<div class="field field-main">
+<div class="item">1</div>
+<div class="item">2</div>
+<div class="item">3</div>
+<div class="item">4</div>
+<div class="item">5</div>
+<div class="item">6</div>
+<div class="item">7</div>
+<div class="item">8</div>
+<div class="item">9</div>
+</div>
+</div> -->
