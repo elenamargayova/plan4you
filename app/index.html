@@ -13,20 +13,21 @@
 <body>
 <header class="header">
  <nav class="navigation">
-    <div class="navitem"><a href="#home">Главная</a></div>
-    <div class="navitem"><a href="#content">Содержание</a></div>
-    <div class="navitem"><a href="#advantages">Преимущества</a></div>
-    <div class="navitem"><a href="#wrap">Упаковка</a></div>
-    <div class="navitem"><a href="#contacts">Контакты</a></div>
+  <a class="navitem" href="#home">Главная</a>
+  <a class="navitem" href="#content">Содержание</a>
+  <a class="navitem" href="#advantages">Преимущества</a>
+  <a class="navitem" href="#wrapper">Упаковка</a>
+  <a class="navitem" href="#contacts">Контакты</a>
  </nav>
 </header>
-  <div id="home" class="container">
-    <picture>
+  <div id="home" class="container imgBg-container home-container">
+    <!-- <picture>
     <source srcset="assets/images/large-hero--large.jpg 1920w, assets/images/large-hero--large-hi-dpi.jpg 3840w" media="(min-width:1380px)">
     <source srcset="assets/images/large-hero--medium.jpg 1380w, assets/images/large-hero--medium-hi-dpi.jpg 2760w" media="(min-width:990px)">
     <source srcset="assets/images/large-hero--small.jpg 990w, assets/images/large-hero--small-hi-dpi.jpg 1980w" media="(min-width:640px)">
     <img srcset="assets/images/large-hero--smaller.jpg 640w, assets/images/large-hero--smaller-hi-dpi.jpg 1280w" alt="Peonies and notepad" class="large-hero__image">
-  </picture>
+  </picture> -->
+  &nbsp;
   </div>
   <div class="text-container">
     <div class="corner corner-top-left"></div>
@@ -34,7 +35,10 @@
     <div class="corner corner-bottom-left"></div>
     <div class="corner corner-bottom-right"></div>
     <span>&#9829;&nbsp;&#10084;&nbsp;&nbsp;</span>Сделай сегодня приключением!<span>&nbsp;&nbsp;&#10084;&nbsp;&#9829;</span></div>
-  <div id="advantages" class="container"></div>
+  <div id="advantages" class=" advantages-container container">
+    <div class="imgBg-container advantages-imgBg-container"></div>
+    <button>Заказать <span>консультацию</span></button>
+  </div>
   <div id="content" class="container"></div>
   <div class="text-container">
     <div class="corner corner-top-left"></div>
@@ -42,8 +46,15 @@
     <div class="corner corner-bottom-left"></div>
     <div class="corner corner-bottom-right"></div>
     <span>&#9829;&nbsp;&#10084;&nbsp;&nbsp;</span>Где любовь, там и жизнь!<span>&nbsp;&nbsp;&#10084;&nbsp;&#9829;</span></div>
-  <div id="wrap" class="container"></div>
-  <div id="contacts" class="container"></div>
+  <div id="wrapper" class="container imgBg-container wrapper-container">
+  </div>
+  <div id="contacts" class="container contacts-container">
+    <div class="contacts">
+      <span class="tel">+375 29 768 78 64</span>
+      <span class="email">dusha.2018@tut.by</span>
+    </div>
+    <div class="social">Подписывайтесь!</div>
+  </div>
   <footer class="text-container footer">
     <div class="corner corner-top-left"></div>
     <div class="corner corner-top-right"></div>
