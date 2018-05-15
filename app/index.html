@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +11,17 @@
   <!--endbuild-->
 
 </head>
+
 <body>
-<header class="header">
- <nav class="navigation">
-  <a class="navitem" href="#home">Главная</a>
-  <a class="navitem" href="#content">Содержание</a>
-  <a class="navitem" href="#advantages">Преимущества</a>
-  <a class="navitem" href="#wrapper">Упаковка</a>
-  <a class="navitem" href="#contacts">Контакты</a>
- </nav>
-</header>
+  <header class="header">
+    <nav class="navigation">
+      <a class="navitem" href="#home">Главная</a>
+      <a class="navitem" href="#content">Содержание</a>
+      <a class="navitem" href="#advantages">Преимущества</a>
+      <a class="navitem" href="#wrapper">Упаковка</a>
+      <a class="navitem" href="#contacts">Контакты</a>
+    </nav>
+  </header>
   <div id="home" class="container imgBg-container home-container">
     <!-- <picture>
     <source srcset="assets/images/large-hero--large.jpg 1920w, assets/images/large-hero--large-hi-dpi.jpg 3840w" media="(min-width:1380px)">
@@ -27,7 +29,7 @@
     <source srcset="assets/images/large-hero--small.jpg 990w, assets/images/large-hero--small-hi-dpi.jpg 1980w" media="(min-width:640px)">
     <img srcset="assets/images/large-hero--smaller.jpg 640w, assets/images/large-hero--smaller-hi-dpi.jpg 1280w" alt="Peonies and notepad" class="large-hero__image">
   </picture> -->
-  &nbsp;
+    &nbsp;
   </div>
   <div class="text-container">
     <div class="corner corner-top-left"></div>
@@ -39,7 +41,11 @@
     <div class="imgBg-container advantages-imgBg-container"></div>
     <button>Заказать <span>консультацию</span></button>
   </div>
-  <div id="content" class="container"></div>
+  <div id="content" class="container content-container ">
+    <div class="first-row-img"></div>
+    <h2 class="section-title">Содержание</h2>
+    <div class="second-row-img"></div>
+  </div>
   <div class="text-container">
     <div class="corner corner-top-left"></div>
     <div class="corner corner-top-right"></div>
@@ -47,6 +53,17 @@
     <div class="corner corner-bottom-right"></div>
     <span>&#9829;&nbsp;&#10084;&nbsp;&nbsp;</span>Где любовь, там и жизнь!<span>&nbsp;&nbsp;&#10084;&nbsp;&#9829;</span></div>
   <div id="wrapper" class="container imgBg-container wrapper-container">
+    <div class="wrapper-types">
+      <div class="wrapper">
+        <img src="assets/images/wrapper1--large.jpg" alt="wrapper1">
+        <span>для набора</span>
+      </div>
+      <h2 class="section-title">Упаковка</h2>
+      <div class="wrapper">
+        <img src="assets/images/wrapper2--large.jpg" alt="wrapper2">
+        <span>стандартная</span>
+      </div>
+    </div>
   </div>
   <div id="contacts" class="container contacts-container">
     <div class="contacts">
@@ -60,9 +77,10 @@
     <div class="corner corner-top-right"></div>
     <div class="corner corner-bottom-left"></div>
     <div class="corner corner-bottom-right"></div>
-  <img src="assets/images/logo.png" alt="logo" />
+    <img src="assets/images/logo.png" alt="logo" />
   </footer>
 </body>
+
 </html>
 
 

@@ -63,7 +63,7 @@ body {
   justify-content: space-between;
   align-items: space-around;
   flex-grow: 1;
-  background: #fff;
+  background-color: #fff;
   border: 1px solid #000;
   height: 95vh;
 }
@@ -108,9 +108,62 @@ button span {
 }
 
 .wrapper-container {
-  top: 4rem;
-  margin-bottom: 4rem;
   background-image: url(../../assets/images/wrapper-main--large.jpg);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section-title {
+  font-size: 12rem;
+  font-family: Mistral;
+  line-height: 1;
+  z-index: 100;
+  font-weight: 400;
+}
+
+
+.content-container {
+  background-color: #f7fbfa;
+}
+
+.wrapper-container .section-title {
+  transform: rotate(-8deg);
+  margin: -1rem -15rem;
+}
+
+.wrapper-imgBg-container {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30%;
+  height: 30vh;
+  background-position: center center;
+  position: relative;
+}
+
+.wrapper-types {
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 3rem;
+  margin: 1rem;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper span {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 2rem;
+}
+
+.wrapper img {
+  width: 40vh;
+  height: 40vh;
 }
 
 .advantages-container {
@@ -134,7 +187,7 @@ button span {
 
 .contacts-container span {
   display: inline-block;
-  width:100%;
+  width: 100%;
 }
 
 .text-container {
