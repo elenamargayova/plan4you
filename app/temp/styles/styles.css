@@ -557,16 +557,46 @@ body {
 }
 
 .navitem {
-  padding: 0px 8px;
+  border: none;
+  text-align: center;
+  /* padding: 0px 100px; */
 }
 
-.navitem:hover {
+/* &:hover {
+    padding: 0px 8px;
+    border-bottom: 4px solid #4b4351;
+    transition: all .5s ease;
+  } */
+
+.navitem.is-current-link:after {
+    width: 100%;
+    background: #4b4351;
+  }
+
+.navitem:after {
+  content: '';
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  height: 5px;
+  width: 0px;
+  background: transparent;
+  -webkit-transition: width .5s ease, background-color .5s ease;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.navitem:hover:after {
+  width: 100%;
+  background: #4b4351;
+}
+
+/* .navitem:hover {
   border-bottom: 2px solid #4b4351;
 }
 
 .navitem:active {
   border-bottom: 2px solid #000;
-}
+} */
 
 .container {
   display: -webkit-box;
@@ -612,6 +642,11 @@ button {
   cursor: pointer;
 }
 
+.btn--white {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000;
+}
+
 button:focus {
   outline: none;
 }
@@ -627,30 +662,70 @@ button span {
   top: 4rem;
   margin-bottom: 4rem;
   background-image: url(../../assets/images/large-hero--large.jpg);
-}
-
-.advantages-imgBg-container{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-      -ms-flex-direction:column;
-          flex-direction:column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.large-hero {
+  padding: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding:3rem;
+
+}
+
+.large-hero h1 {
+  font-size: 11rem;
+  font-family: Mistral;
+  font-weight: 500;
+  margin: 0;
+}
+
+.large-hero ul {
+  width:40vw;
+  list-style: none;
+  font-size: 4rem;
+}
+
+.large-hero ul li {
+    margin:5rem 2rem;
+  }
+
+.advantages-imgBg-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 3rem;
 }
 
 .advantage {
-  font-size:4.5rem;
+  font-size: 4.5rem;
   font-family: Mistral;
   text-align: center;
-
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -662,8 +737,8 @@ button span {
       align-self: flex-end;
   -webkit-transform: rotate(-1deg);
           transform: rotate(-1deg);
-  height:10vh;
-  width:57vw;
+  height: 10vh;
+  width: 57vw;
   padding-top: 8rem;
   margin-right: 15rem;
 }
@@ -671,24 +746,24 @@ button span {
 .advantage2 {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  height:25vh;
+  height: 25vh;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   -webkit-transform: rotate(-15deg);
           transform: rotate(-15deg);
-padding-top: 57rem;
-width: 45vw;
+  padding-top: 57rem;
+  width: 45vw;
 }
 
 .advantage3 {
   -ms-flex-item-align: start;
       align-self: flex-start;
   /* background: green; */
-  height:25vh;
+  height: 25vh;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
-  width:46vw;
+  width: 46vw;
 }
 
 .wrapper-container {
@@ -710,27 +785,27 @@ width: 45vw;
 }
 
 .content-container {
-  position:relative;
+  position: relative;
   background-color: #f7fbfa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap:wrap;
-      flex-wrap:wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .content-container .section-title {
-position: absolute;
-text-align: center;
--webkit-transform: translateY(-10%);
-        transform: translateY(-10%);
+  position: absolute;
+  text-align: center;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
 }
 
 .content-img {

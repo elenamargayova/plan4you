@@ -10,19 +10,35 @@
   <link rel="stylesheet" href="temp/styles/styles.css">
   <!--endbuild-->
 
+  <!--build:js assets/scripts/Vendor.js-->
+    <script src="/temp/scripts/Vendor.js"></script>
+    <!--endbuild-->
+
 </head>
 
 <body>
   <header class="header">
     <nav class="navigation">
-      <a class="navitem" href="#home">Главная</a>
-      <a class="navitem" href="#content">Содержание</a>
-      <a class="navitem" href="#advantages">Преимущества</a>
-      <a class="navitem" href="#wrapper">Упаковка</a>
-      <a class="navitem" href="#contacts">Контакты</a>
+      <a class="navitem" id="home-link" href="#home">Главная</a>
+      <a class="navitem" id="content-link" href="#content">Содержание</a>
+      <a class="navitem" id="advantages-link" href="#advantages">Преимущества</a>
+      <a class="navitem" id="wrapper-link" href="#wrapper">Упаковка</a>
+      <a class="navitem" id="contacts-link" href="#contacts">Контакты</a>
     </nav>
   </header>
-  <div id="home" class="container imgBg-container home-container">
+
+  <div id="home" class="container imgBg-container home-container" data-matching-link="#home-link">
+<div class="large-hero">
+  <h1>Ежедневник Невесты:</h1>
+  <ul>
+    <li class="heart">&#10084;&nbsp; 128 страниц для идей и планов в организации вашей свадьбы</li>
+    <li class="heart">&#10084;&nbsp;Легкий, стильный и удобный формат</li>
+    <li class="heart">&#10084;&nbsp;Подсказки и тематические картинки</li>
+    <li class="heart">&#10084;&nbsp;Упакован с любовью!</li>
+  </ul>
+  <button class="order btn--white">Заказать<span>Ежедневник Невесты</span></button>
+</div>
+
     <!-- <picture>
     <source srcset="assets/images/large-hero--large.jpg 1920w, assets/images/large-hero--large-hi-dpi.jpg 3840w" media="(min-width:1380px)">
     <source srcset="assets/images/large-hero--medium.jpg 1380w, assets/images/large-hero--medium-hi-dpi.jpg 2760w" media="(min-width:990px)">
@@ -37,35 +53,36 @@
     <div class="corner corner-bottom-left"></div>
     <div class="corner corner-bottom-right"></div>
     <span>&#9829;&nbsp;&#10084;&nbsp;&nbsp;</span>Сделай сегодня приключением!<span>&nbsp;&nbsp;&#10084;&nbsp;&#9829;</span></div>
-  <div id="advantages" class=" advantages-container container">
+
+  <div id="advantages" class=" advantages-container container" data-matching-link="#advantages-link">
     <div class="imgBg-container advantages-imgBg-container">
       <div class="advantage advantage1">Ваши мысли упорядочены и остается место для новых идей, мыслей, и других повседневных дел. </div>
       <div class="advantage advantage2">Все ваши яркие эмоции, чувства и воспоминания собраны в одном компактном ежедневнике</div>
       <div class="advantage advantage3">У вас всегда под рукой – списки, таблицы, чек-листы, подсказки для планирования, места для изображений и зарисовок, планинг и т.д. <br />Остается только заполнить!</div>
-
     </div>
     <button>Заказать <span>консультацию</span></button>
   </div>
-  <div id="content" class="container content-container ">
-    <!-- <div class="first-row-img"> -->
-    <img src="assets/images/content-img1--large.jpg" alt="content-img1" class="content-img">
-    <img src="assets/images/content-img2--large.jpg" alt="content-img2" class="content-img">
-    <img src="assets/images/content-img3--large.jpg" alt="content-img3" class="content-img">
-    <img src="assets/images/content-img4--large.jpg" alt="content-img4" class="content-img">
-    <img src="assets/images/content-img5--large.jpg" alt="content-img5" class="content-img">
-    <img src="assets/images/content-img6--large.jpg" alt="content-img6" class="content-img">
-    <h2 class="section-title">Содержание</h2>
-    <!-- </div> -->
 
-    <!-- <div class="second-row-img"></div> -->
+
+  <div id="content" class="container content-container" data-matching-link="#content-link">
+      <img src="assets/images/content-img1--large.jpg" alt="content-img1" class="content-img">
+      <img src="assets/images/content-img2--large.jpg" alt="content-img2" class="content-img">
+      <img src="assets/images/content-img3--large.jpg" alt="content-img3" class="content-img">
+      <img src="assets/images/content-img4--large.jpg" alt="content-img4" class="content-img">
+      <img src="assets/images/content-img5--large.jpg" alt="content-img5" class="content-img">
+      <img src="assets/images/content-img6--large.jpg" alt="content-img6" class="content-img">
+      <h2 class="section-title">Содержание</h2>
   </div>
+
   <div class="text-container">
     <div class="corner corner-top-left"></div>
     <div class="corner corner-top-right"></div>
     <div class="corner corner-bottom-left"></div>
     <div class="corner corner-bottom-right"></div>
-    <span>&#9829;&nbsp;&#10084;&nbsp;&nbsp;</span>Где любовь, там и жизнь!<span>&nbsp;&nbsp;&#10084;&nbsp;&#9829;</span></div>
-  <div id="wrapper" class="container imgBg-container wrapper-container">
+    <span>&#9829;&nbsp;&#10084;&nbsp;&nbsp;</span>Где любовь, там и жизнь!<span>&nbsp;&nbsp;&#10084;&nbsp;&#9829;</span>
+  </div>
+
+  <div id="wrapper" class="container imgBg-container wrapper-container" data-matching-link="#wrapper-link">
     <div class="wrapper-types">
       <div class="wrapper">
         <img src="assets/images/wrapper1--large.jpg" alt="wrapper1">
@@ -78,13 +95,15 @@
       </div>
     </div>
   </div>
-  <div id="contacts" class="container contacts-container">
+
+  <div id="contacts" class="container contacts-container" data-matching-link="#contacts-link">
     <div class="contacts">
       <span class="tel">+375 29 768 78 64</span>
       <span class="email">dusha.2018@tut.by</span>
     </div>
     <div class="social">Подписывайтесь!</div>
   </div>
+
   <footer class="text-container footer">
     <div class="corner corner-top-left"></div>
     <div class="corner corner-top-right"></div>
@@ -92,21 +111,14 @@
     <div class="corner corner-bottom-right"></div>
     <img src="assets/images/logo.png" alt="logo" />
   </footer>
+
+  <!--build:js assets/scripts/App.js-->
+  <script src="/temp/scripts/App.js"></script>
+  <!--endbuild-->
+
 </body>
 
 </html>
 
 
-<!-- <div class="container">
-<div class="field field-main">
-<div class="item">1</div>
-<div class="item">2</div>
-<div class="item">3</div>
-<div class="item">4</div>
-<div class="item">5</div>
-<div class="item">6</div>
-<div class="item">7</div>
-<div class="item">8</div>
-<div class="item">9</div>
-</div>
 </div> -->
