@@ -112,7 +112,7 @@ button {
   margin: 35px 0px 75px 0px;
   background-color: #655f69;
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 3rem;
   border: none;
   cursor: pointer;
 }
@@ -130,7 +130,7 @@ button span {
   font-family: Mistral;
   display: inline-block;
   width: 100%;
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 
 .home-container {
@@ -160,6 +160,14 @@ ul {
   width:40vw;
   list-style: none;
   font-size: 4rem;
+  margin-left: 10rem;
+  li:before {
+     content: "\2764 \0020";
+    /* content: "\2661 \0020"; */
+    /* content: "\2665 \0020"; */
+    /* content: "\10E6 \0020"; */
+        margin: 0 4rem 0 -8rem;
+  }
   li {
     margin:5rem 2rem;
   }
