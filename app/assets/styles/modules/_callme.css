@@ -1,0 +1,107 @@
+.callme {
+  &__checkbox {
+    display: none;
+  }
+  &__button {
+    background-color: $colorWhite;
+
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 5rem;
+    right: 2rem;
+    border-radius: 50%;
+    z-index: 80;
+    box-shadow: 0 1rem 3rem rgba($colorBlack, .1);
+    text-align: center;
+    cursor: pointer;
+    /* transform: scale(1.2);
+    transition:transform .8s cubic-bezier(0.86, 0, 0.07, 1); */
+.contbtn {
+    background: url(../../assets/images/contacts.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 300;
+    height: 85%;
+    margin: 0.8rem 0.25rem;
+}
+
+  }
+
+
+  &__background {
+    height: 6rem;
+    font-size: 0;
+    width: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 5.5rem;
+    right: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* background-image: radial-gradient($colorPrimaryLight, $colorPrimaryDark); */
+    z-index: 70;
+    transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+    /* transition: transform .8s ease-in; */
+
+    span {
+      font-size: 0.3rem;
+      font-weight: 200;
+    /* margin: 0 auto; */
+    top: 62%;
+    position: absolute;
+    left: 13%;
+    }
+
+  }
+
+  &__checkbox:checked~&__background {
+    font-size: 1px;
+    transform: scale(8);
+  }
+
+  &__icon {
+    position: relative;
+    margin-top: 3.5rem;
+    &, &::before, &::after {
+      width: 3rem;
+      height: 2px;
+      background-color: $colorGreyDark3;
+      display: inline-block;
+    }
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all .2s;
+
+    }
+    &::before {
+      top: -.8rem;
+    }
+    &::after {
+      top: .8rem;
+    }
+  }
+
+  &__button:hover  {
+    transform: scale(1.1);
+    transition: transform .2s ease-in;
+  }
+  /* &__button:hover &__icon::before {
+    top: -1rem;
+  }
+  &__button:hover &__icon::after {
+    top: 1rem;
+  } */
+  &__checkbox:checked+&__button &__icon {
+    background-color: transparent;
+  }
+  &__checkbox:checked+&__button &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+  &__checkbox:checked+&__button &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+}
