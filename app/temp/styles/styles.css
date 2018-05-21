@@ -486,9 +486,123 @@ a{
 @import "modules/_site-header";
 @import "modules/_primary-nav";
 @import "modules/_reveal-item";
-@import "modules/_modal";
-@import "modules/_social-icons";
-@import "modules/_form";*/
+@import "modules/_social-icons";*/
+
+*{
+  outline:none;
+}
+
+form{
+  float: left;
+width: 100%;
+margin: 2rem;
+font-size: 2rem;
+}
+
+form>div{
+  float:left;
+  width:50%;
+}
+
+form>div>input{
+  border-radius: 10px;
+  border:1px solid #c4c4c4;
+  font-size: 0.8em;
+  padding:10px 5%;
+  margin-bottom:10px;
+  background-color: #fff;
+  width:76%;
+}
+
+form>div>input:focus,form textarea:focus{
+  /*border-color:#adadad;*/
+  border:2px solid #adadad;
+}
+
+form textarea{
+  border-radius: 5px;
+border: 1px solid #c4c4c4;
+font-size: 0.8em;
+padding: 10px;
+background-color: #fff;
+width: 85%;
+resize: vertical;
+max-height: 200px;
+min-height: 127px;
+}
+
+form .btn__send{
+  border-radius: 5px;
+  padding: 5px 15px;
+  border: 0;
+  cursor: pointer;
+  background-color: #d59541;
+  color: #fff;
+  margin: 10px 0px;
+}
+
+form .btn:hover{
+  border-bottom-color:#1999d1;
+}
+
+.modal {
+  position: fixed;
+  z-index: 300;
+  background-color: rgba(255, 255, 255, .94);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity:0;
+  visibility: hidden;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.modal--is-visible{
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+
+}
+
+.modal__inner{
+    position: absolute;
+    text-align: center;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+  }
+
+.modal__description {
+    text-align: center;
+  font-size: 2.3rem;
+  font-weight: 300;
+  line-height: 1.65;
+  margin: 3rem 0;
+  }
+
+.modal__close {
+    position: absolute;
+    top: 2rem;
+  right: 2rem;
+  font-size: 3rem;
+    -webkit-transform: scaleX(1.2);
+            transform: scaleX(1.2);
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+    color: #2f5572;
+    cursor:pointer;
+  }
+
+.modal__close:hover {
+      color: #d59541;
+    }
 
 * {
   margin: 0;
