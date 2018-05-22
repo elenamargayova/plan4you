@@ -656,7 +656,7 @@ body {
   width: 100vw;
 }
 
-.navigation {
+.header .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -669,17 +669,17 @@ body {
   height: 100%;
 }
 
-.navitem {
+.header .navitem {
   border: none;
   text-align: center;
 }
 
-.navitem.is-current-link:after {
+.header .navitem.is-current-link:after {
     width: 100%;
     background: #4b4351;
   }
 
-.navitem:after {
+.header .navitem:after {
   content: '';
   display: block;
   text-align: center;
@@ -691,10 +691,19 @@ body {
   transition: width .5s ease, background-color .5s ease;
 }
 
-.navitem:hover:after {
+.header .navitem:hover:after {
   width: 100%;
   background: #4b4351;
 }
+
+#mySidenav .navitem:hover:after {
+     background: transparent;
+ }
+
+/* #mySidenav .navitem:hover:after {
+  width: 100%;
+  background: #fff;
+} */
 
 .container {
   display: -webkit-box;
@@ -1226,3 +1235,55 @@ button span {
     -webkit-transform: rotate(-135deg);
             transform: rotate(-135deg);
   }
+
+.toggleSidenav {
+  position: fixed;
+  z-index: 200;
+  color:#000;
+  /* top:2rem; */
+  /* left:2rem; */
+  margin: 1rem ;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(63,56,68,0.95);
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding-top: 60px;
+
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f5f4f9;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.sidenav a:hover,.sidenav a:active {
+    color: #d7c8b3;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

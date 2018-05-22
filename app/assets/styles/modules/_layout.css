@@ -36,7 +36,7 @@ body {
   width: 100vw;
 }
 
-.navigation {
+ .header .navigation {
   display: flex;
   justify-content: space-around;
   align-items: stretch;
@@ -44,7 +44,7 @@ body {
   height: 100%;
 }
 
-.navitem {
+.header .navitem {
   border: none;
   text-align: center;
   &.is-current-link:after {
@@ -53,7 +53,7 @@ body {
   }
 }
 
-.navitem:after {
+.header .navitem:after {
   content: '';
   display: block;
   text-align: center;
@@ -64,10 +64,19 @@ body {
   transition: width .5s ease, background-color .5s ease;
 }
 
-.navitem:hover:after {
+.header .navitem:hover:after {
   width: 100%;
   background: #4b4351;
 }
+
+
+ #mySidenav .navitem:hover:after {
+     background: transparent;
+ }
+/* #mySidenav .navitem:hover:after {
+  width: 100%;
+  background: #fff;
+} */
 
 .container {
   display: flex;

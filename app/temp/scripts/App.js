@@ -10351,6 +10351,25 @@ var stickyHeader = new _StickyHeader2.default(); // import MobileMenu from './mo
 // import RevealOnScroll from './modules/RevealOnScroll';
 
 var modal = new _Modal2.default();
+var mySidenav = document.getElementById("openSidenav");
+var closebtn = document.getElementById("closebtn");
+
+// mySidenav.addEventListener("click",openNav);
+// closebtn.addEventListener("click",closeNav);
+
+(0, _jquery2.default)("#toggleSidenav").click(function () {
+  return (this.tog = !this.tog) ? openNav() : closeNav();
+});
+
+function openNav() {
+  document.getElementById("toggleSidenav").style.color = "#fff";
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("toggleSidenav").style.color = "#000";
+  document.getElementById("mySidenav").style.width = "0";
+}
 
 /***/ }),
 /* 2 */
