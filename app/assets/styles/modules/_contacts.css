@@ -1,0 +1,23 @@
+.contacts-container {
+  height: 12rem;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 2rem;
+}
+
+.contacts span {
+  display: inline-block;
+  width: 100%;
+  /* font-size: 1.25rem; */
+  line-height: 1;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social img {
+  height:4rem;
+  margin: 2rem;
+}

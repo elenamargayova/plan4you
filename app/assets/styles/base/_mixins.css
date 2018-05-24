@@ -1,41 +1,100 @@
-$bp-largest: 75em;     //1200px
-$bp-large: 68.75em;    // 1100px
-$bp-medium: 56.25em;   // 900px
-$bp-small: 37.5em;     // 600px
-$bp-smaller: 31.25em; // 500px
+/* $bpLargest: 125em;     //>2000px */
+/*$bpLargest: 125em;     //>2000px
+120em //1920px
+$bpLarger: 75em;     //1200px
+$bpLarge: 68.75em;    // 1100px
+$bpMedium: 56.25em;   // 900px
+$bpSmall: 37.5em;     // 600px
+$bpSmaller: 31.25em; // 500px
+$bpSmallest: 20em; // 320px
+$retinaRes:2dppx;*/
+
 
 @define-mixin atSmallest {
-  @media (min-width: 320px) {
+  @media (min-width:20em) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atSmallestRetina {
+  @media only screen and (min-resolution:2dppx) and (min-width:20em) {
     @mixin-content;
   }
 }
 
 @define-mixin atSmaller {
-  @media (min-width: $bp-smaller) {
+  @media (min-width:31.25em) {
     @mixin-content;
   }
 }
 
+@define-mixin atSmallerRetina {
+  @media only screen and (min-resolution:2dppx) and (min-width:31.25em) {
+    @mixin-content;
+  }
+}
+
+
 @define-mixin atSmall {
-  @media (min-width: $bp-small) {
+  @media (min-width: 37.5em) {
+    @mixin-content;
+  }
+}
+
+
+@define-mixin atSmallRetina {
+  @media only screen and (min-resolution:2dppx) and (min-width: 37.5em) {
     @mixin-content;
   }
 }
 
 @define-mixin atMedium {
-  @media (min-width: $bp-medium) {
+  @media (min-width: 56.25em) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atMediumRetina {
+  @media only screen and (min-resolution:2dppx) and (min-width: 56.25em) {
     @mixin-content;
   }
 }
 
 @define-mixin atLarge {
-  @media (min-width:$bp-large) {
+  @media (min-width:68.75em) {
     @mixin-content;
   }
 }
 
+@define-mixin atLargeRetina {
+  @media only screen and (min-resolution:2dppx) and (min-width:68.75em) {
+    @mixin-content;
+  }
+}
+
+
+
+@define-mixin atLarger {
+  @media (min-width: 75em) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atLargerRetina {
+  @media only screen and (min-resolution:2dppx) and (min-width: 75em) {
+    @mixin-content;
+  }
+}
+
+
 @define-mixin atLargest {
-  @media (min-width: $bp-largest) {
+  @media (min-width:120em) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atLargestRetina {
+  @media only screen and (min-resolution:2dppx) and (min-width:120em) {
     @mixin-content;
   }
 }

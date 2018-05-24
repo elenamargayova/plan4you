@@ -1,0 +1,21 @@
+.content-container {
+  position: relative;
+  background-color: #f7fbfa;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.content-container .section-title {
+  position: absolute;
+  text-align: center;
+  transform: translateY(-10%);
+}
+
+.content-img {
+  margin: 1.5rem;
+  height: auto;
+  width: 23vw;
+}

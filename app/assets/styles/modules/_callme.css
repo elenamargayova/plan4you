@@ -4,17 +4,23 @@
   }
   &__button {
     background-color: $colorWhite;
-
-    height: 7rem;
-    width: 7rem;
+    /* border:1px solid #000; */
     position: fixed;
-    top: 5rem;
+    height: 5rem;
+    width: 5rem;
+    top: 1.5rem;
     right: 2rem;
     border-radius: 50%;
     z-index: 80;
     box-shadow: 0 1rem 3rem rgba($colorBlack, .1);
     text-align: center;
     cursor: pointer;
+    @mixin atMedium {
+      height: 7rem;
+      width: 7rem;
+      top: 6rem;
+      right: 2.5rem;
+    }
     /* transform: scale(1.2);
     transition:transform .8s cubic-bezier(0.86, 0, 0.07, 1); */
 .contbtn {
@@ -30,21 +36,32 @@
 
 
   &__background {
-    height: 6rem;
     font-size: 0;
-    width: 6rem;
+    height: 5rem;
+    width: 5rem;
     border-radius: 50%;
     position: fixed;
-    top: 5.5rem;
-    right: 2.5rem;
+    top: 1.5rem;
+    right: 2rem;
     background-color: rgba(255, 255, 255, 0.5);
     /* background-image: radial-gradient($colorPrimaryLight, $colorPrimaryDark); */
     z-index: 70;
     transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
     /* transition: transform .8s ease-in; */
 
+    @mixin atMedium {
+      height: 6rem;
+      width: 6rem;
+      top: 6.5rem;
+      right: 3.5rem;
+    }
+
     span {
+      font-size: 0.35rem;
+    @mixin atSmall {
       font-size: 0.3rem;
+    }
+
       font-weight: 200;
     /* margin: 0 auto; */
     top: 62%;
@@ -55,8 +72,14 @@
   }
 
   &__checkbox:checked~&__background {
-    font-size: 1px;
-    transform: scale(8);
+    /* font-size: 1px; */
+    transform: scale(4);
+    @mixin atSmall {
+      transform: scale(6);
+    }
+    @mixin atMedium {
+      transform: scale(8);
+    }
   }
 
   &__icon {

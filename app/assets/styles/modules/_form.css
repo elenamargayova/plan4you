@@ -35,7 +35,7 @@ background-color: #fff;
 width: 85%;
 resize: vertical;
 max-height: 200px;
-min-height: 127px;
+min-height: 140px;
 }
 form .btn__send{
   border-radius: 5px;

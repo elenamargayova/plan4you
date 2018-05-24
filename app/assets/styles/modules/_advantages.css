@@ -1,0 +1,84 @@
+.advantages-container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100vh;
+}
+
+.advantages-imgBg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1.5rem;
+  background-image: url(../../assets/images/advantages--smaller.jpg);
+
+    @mixin atSmall {
+      background-image: url(../../assets/images/advantages--small.jpg);
+    }
+    @mixin atMedium {
+      background-image: url(../../assets/images/advantages--medium.jpg);
+    }
+    /* @mixin atLarge {
+      background-image: url(../../assets/images/advantages--large.jpg);
+    } */
+    @mixin atLarger {
+      background-image: url(../../assets/images/advantages--large.jpg);
+    }
+    @mixin atLargest {
+      background-image: url(../../assets/images/advantages--largest.jpg);
+    }
+
+    @mixin atSmallerRetina {
+      background-image: url(../../assets/images/advantages--smaller-hi-dpi.jpg);
+    }
+
+    @mixin atSmallRetina {
+      background-image: url(../../assets/images/advantages--small-hi-dpi.jpg);
+    }
+    @mixin atMediumRetina {
+      background-image: url(../../assets/images/advantages--medium-hi-dpi.jpg);
+    }
+    /* @mixin atLargeRetina {
+      background-image: url(../../assets/images/advantages--large-hi-dpi.jpg);
+    } */
+    @mixin atLargerRetina {
+      background-image: url(../../assets/images/advantages--large-hi-dpi.jpg);
+    }
+    @mixin atLargestRetina {
+      background-image: url(../../assets/images/advantages--largest-hi-dpi.jpg);
+    }
+
+  }
+
+.advantage {
+  font-size: 2.25rem;
+  font-family: Mistral;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.advantage1 {
+  align-self: flex-end;
+  transform: rotate(-1deg);
+  height: 10vh;
+  width: 57vw;
+  padding-top: 4rem;
+  margin-right: 7.5rem;
+}
+
+.advantage2 {
+  align-self: flex-end;
+  height: 25vh;
+  justify-content: flex-end;
+  transform: rotate(-15deg);
+  padding-top: 28.5rem;
+  width: 35vw;
+}
+
+.advantage3 {
+  align-self: flex-start;
+  height: 25vh;
+  transform: rotate(10deg);
+  width: 46vw;
+}

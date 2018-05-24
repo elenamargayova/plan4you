@@ -1,0 +1,44 @@
+.header {
+  display: none;
+  @mixin atMedium {
+    display: block;
+    font-size: 2rem;
+    height: 3.5rem;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+  }
+}
+
+ .header .navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  background: #fff;
+  height: 100%;
+}
+
+.header .navitem {
+  border: none;
+  text-align: center;
+  &.is-current-link:after {
+    width: 100%;
+    background: #4b4351;
+  }
+}
+
+.header .navitem:after {
+  content: '';
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  height: 0.25rem;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.header .navitem:hover:after {
+  width: 100%;
+  background: #4b4351;
+}

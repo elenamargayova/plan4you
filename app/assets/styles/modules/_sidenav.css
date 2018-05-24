@@ -1,10 +1,15 @@
 .toggleSidenav {
+  display: block;
   position: fixed;
   z-index: 200;
   color:#000;
   /* top:2rem; */
   /* left:2rem; */
   margin: 1rem ;
+
+  @mixin atMedium {
+    display:none;
+  }
 }
 
 .sidenav {
@@ -30,6 +35,16 @@
     transition: 0.3s;
     text-align: left;
 }
+
+
+ #mySidenav .navitem:hover:after {
+     background: transparent;
+ }
+/* #mySidenav .navitem:hover:after {
+  width: 100%;
+  background: #fff;
+} */
+
 
 .sidenav a:hover,.sidenav a:active {
     color: #d7c8b3;
