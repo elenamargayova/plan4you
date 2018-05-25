@@ -1,11 +1,11 @@
 .toggleSidenav {
   display: block;
   position: fixed;
-  z-index: 200;
+  z-index: 300;
   color:#000;
-  /* top:2rem; */
-  /* left:2rem; */
-  margin: 1rem ;
+  font-size:30px;
+  cursor:pointer;
+  padding: 1rem 1.5rem;
 
   @mixin atMedium {
     display:none;
@@ -16,37 +16,31 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 200;
     top: 0;
     left: 0;
     background-color: rgba(63,56,68,0.95);
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding: 10rem 0;
 
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 3rem 5rem;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 3rem;
     color: #f5f4f9;
     display: block;
     transition: 0.3s;
     text-align: left;
 }
 
-
- #mySidenav .navitem:hover:after {
+.sidenav .navitem:hover:after {
      background: transparent;
  }
-/* #mySidenav .navitem:hover:after {
-  width: 100%;
-  background: #fff;
-} */
 
-
-.sidenav a:hover,.sidenav a:active {
+.sidenav a:hover {
     color: #d7c8b3;
 }
 
@@ -59,6 +53,6 @@
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {padding-top: 1.5rem;}
+  .sidenav a {font-size: 1.8rem;}
 }

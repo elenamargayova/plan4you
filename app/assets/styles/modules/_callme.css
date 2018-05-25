@@ -6,8 +6,8 @@
     background-color: $colorWhite;
     /* border:1px solid #000; */
     position: fixed;
-    height: 5rem;
-    width: 5rem;
+    height: 7rem;
+    width: 7rem;
     top: 1.5rem;
     right: 2rem;
     border-radius: 50%;
@@ -15,6 +15,12 @@
     box-shadow: 0 1rem 3rem rgba($colorBlack, .1);
     text-align: center;
     cursor: pointer;
+    @mixin atSmall {
+      height: 5rem;
+      width: 5rem;
+      top: 1.5rem;
+      right: 2rem;
+    }
     @mixin atMedium {
       height: 7rem;
       width: 7rem;
@@ -37,17 +43,23 @@
 
   &__background {
     font-size: 0;
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50%;
     position: fixed;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 7rem;
+    width: 7rem;
     top: 1.5rem;
     right: 2rem;
-    background-color: rgba(255, 255, 255, 0.5);
-    /* background-image: radial-gradient($colorPrimaryLight, $colorPrimaryDark); */
     z-index: 70;
     transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
     /* transition: transform .8s ease-in; */
+
+  @mixin atSmall {
+    height: 5rem;
+    width: 5rem;
+    top: 1.5rem;
+    right: 2rem;
+    }
 
     @mixin atMedium {
       height: 6rem;
@@ -56,20 +68,21 @@
       right: 3.5rem;
     }
 
-    span {
-      font-size: 0.35rem;
+  }
+
+  .callme__txt {
+    font-size: 0.4rem;
+    position: absolute;
+    font-weight: 200;
+    top: 4.75rem;
+    left: 1.1rem;
+
     @mixin atSmall {
       font-size: 0.3rem;
     }
 
-      font-weight: 200;
-    /* margin: 0 auto; */
-    top: 62%;
-    position: absolute;
-    left: 13%;
     }
 
-  }
 
   &__checkbox:checked~&__background {
     /* font-size: 1px; */

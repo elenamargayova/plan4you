@@ -10353,17 +10353,23 @@ var stickyHeader = new _StickyHeader2.default(); // import MobileMenu from './mo
 var modal = new _Modal2.default();
 var mySidenav = document.getElementById("openSidenav");
 var closebtn = document.getElementById("closebtn");
-
+var tog = false;
 // mySidenav.addEventListener("click",openNav);
 // closebtn.addEventListener("click",closeNav);
 
 (0, _jquery2.default)("#toggleSidenav").click(function () {
-  return (this.tog = !this.tog) ? openNav() : closeNav();
+  tog = !tog;
+  return tog ? openNav() : closeNav();
+});
+
+(0, _jquery2.default)("#mySidenav a").click(function () {
+  tog = !tog;
+  return tog ? openNav() : closeNav();
 });
 
 function openNav() {
   document.getElementById("toggleSidenav").style.color = "#fff";
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mySidenav").style.width = "30rem";
 }
 
 function closeNav() {

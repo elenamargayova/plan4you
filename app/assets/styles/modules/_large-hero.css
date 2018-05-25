@@ -1,13 +1,14 @@
 .home-container {
-  margin-bottom: 2rem;
   background-image: url(../../assets/images/large-hero--smaller.jpg);
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
 
   @mixin atSmall {
+    margin-bottom: 2rem;
     background-image: url(../../assets/images/large-hero--small.jpg);
   }
+
   @mixin atMedium {
     top: 2rem;
     background-image: url(../../assets/images/large-hero--medium.jpg);
@@ -45,12 +46,23 @@
 }
 
 .large-hero {
-  width: 30vw;
+  width: 85vw;
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content:center;
+
+  @mixin atSmall {
+    width: 65vw;
+  }
+  @mixin atMedium {
+    width: 40vw;
+  }
+  @mixin atLargest {
+    width: 30vw;
+  }
+
 
 h1 {
   font-size: 5.5rem;
@@ -80,7 +92,12 @@ ul {
 &-btn {
   background-color: rgba(255, 255, 255, 0.5);
   color: #000;
-  margin-left: 10rem;
+  margin-left: 3rem;
+
+  @mixin atSmall {
+    margin-left: 4rem;
+  }
+
 }
 
 

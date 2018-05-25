@@ -82,3 +82,7 @@
   transform: rotate(10deg);
   width: 46vw;
 }
+
+.advantages-btn {
+    margin: 35px 0px 75px 0px;
+}

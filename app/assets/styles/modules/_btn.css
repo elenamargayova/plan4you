@@ -1,13 +1,18 @@
 button {
+width: 37.5rem;
+height: 12.5rem;
+border-radius: 1rem;
+background-color: #655f69;
+color: #fff;
+font-size: 2.75rem;
+border: none;
+cursor: pointer;
+
+@mixin atSmall {
   width: 45.5rem;
-  height: 12.5rem;
   border-radius: 0.6rem;
-  margin: 35px 0px 75px 0px;
-  background-color: #655f69;
-  color: #fff;
-  font-size: 2.75rem;
-  border: none;
-  cursor: pointer;
+}
+
 }
 
 
