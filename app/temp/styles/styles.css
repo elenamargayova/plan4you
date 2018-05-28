@@ -457,10 +457,16 @@ template {
 $bpLarger: 75em;     //1200px
 $bpLarge: 68.75em;    // 1100px
 $bpMedium: 56.25em;   // 900px
-$bpSmall: 37.5em;     // 600px
-$bpSmaller: 31.25em; // 500px
-$bpSmallest: 20em; // 320px
-$retinaRes:2dppx;*/
+$bpSmall:37.5em;     // 600px
+$bpSmaller: 23.43em; //414px
+31.25em; // 500px
+$bpSmallest: 23.43em; // 375px
+default:20em;    //320px
+$retinaRes:2dppx;
+600x320
+320x600
+
+*/
 
 a{
   text-decoration: none;
@@ -479,10 +485,21 @@ cursor: pointer;
 
 }
 
+@media (min-width:23.43em) and (min-height:20em) {
+
+button {
+  font-size: 1.5rem;
+  width: 20.5rem;
+  height: 10rem
+
+}
+  }
+
 @media (min-width: 37.5em) {
 
 button {
   width: 45.5rem;
+    height: 10rem;
   border-radius: 0.6rem
 
 }
@@ -498,6 +515,13 @@ button span {
   width: 100%;
   font-size: 3.75rem;
 }
+
+@media (min-width:23.43em) and (min-height:20em) {
+
+button span {
+    font-size: 2.25rem
+}
+  }
 
 .home-container {
   background-image: url(../../assets/images/large-hero--smaller.jpg);
@@ -551,7 +575,7 @@ button span {
 }
   }
 
-@media only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:31.25em), only screen and (min-resolution:2dppx) and (min-width:31.25em) {
+@media only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:25.875em), only screen and (min-resolution:2dppx) and (min-width:25.875em) {
 
 .home-container {
     background-image: url(../../assets/images/large-hero--smaller-hi-dpi.jpg)
@@ -597,7 +621,7 @@ button span {
 
 .large-hero {
   width: 85vw;
-  padding: 5rem 0;
+  padding: 5rem 0 0 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -615,10 +639,34 @@ button span {
 
 }
 
+@media (min-width:23.43em) {
+
+.large-hero {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0 0 0 2.25rem;
+    padding: 0
+
+
+}
+  }
+
+@media (min-width:23.43em) and (min-height:20em) {
+
+.large-hero {
+    margin-left: 7rem;
+    padding: 0
+
+
+}
+  }
+
 @media (min-width: 37.5em) {
 
 .large-hero {
-    width: 65vw
+    width: 65vw;
+    padding: 5rem 0
 
 
 }
@@ -647,13 +695,48 @@ button span {
   font-family: Mistral;
   font-weight: 500;
   margin: 0;
+
 }
+
+@media (min-width:23.43em) {
+
+.large-hero h1 {
+    margin: 0px 0 2rem 0
+
+}
+  }
+
+@media (min-width:23.43em) and (min-height:20em) {
+
+.large-hero h1 {
+    margin: 0rem;
+    padding: 0;
+    font-size: 2.5rem
+
+}
+  }
 
 .large-hero ul {
   list-style: none;
   font-size: 2.25rem;
   margin-left: 5rem;
 }
+
+@media (min-width:23.43em) {
+
+.large-hero ul {
+    margin: 0 0 5rem 5rem
+}
+  }
+
+@media (min-width:23.43em) and (min-height:20em) {
+
+.large-hero ul {
+    margin: 0rem;
+    padding: 0;
+    font-size: 1.25rem
+}
+  }
 
 .large-hero ul li:before {
      content: "\2764 \0020";
@@ -663,8 +746,24 @@ button span {
     margin: 0 1rem 0 -3.5rem;
   }
 
+@media (min-width:23.43em) and (min-height:20em) {
+
+.large-hero ul li:before {
+      margin: 0px 1rem 0 -2.5rem
+  }
+  }
+
 .large-hero ul li {
     margin:4rem 0rem;
+
+  }
+
+@media (min-width:23.43em) and (min-height:20em) {
+
+.large-hero ul li {
+      margin: 2rem 0rem
+
+  }
   }
 
 .large-hero-btn {
@@ -673,6 +772,22 @@ button span {
   margin-left: 3rem;
 
 }
+
+@media (min-width:23.43em) {
+
+.large-hero-btn {
+    margin: 2rem 0 0 1.25rem
+
+}
+  }
+
+@media (min-width:23.43em) and (min-height:20em) {
+
+.large-hero-btn {
+    margin: 0 0 0 2rem
+
+}
+  }
 
 @media (min-width: 37.5em) {
 
@@ -1096,7 +1211,7 @@ body {
   }
   }
 
-@media only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:31.25em), only screen and (min-resolution:2dppx) and (min-width:31.25em) {
+@media only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:25.875em), only screen and (min-resolution:2dppx) and (min-width:25.875em) {
 
 .advantages-imgBg-container {
       background-image: url(../../assets/images/advantages--smaller-hi-dpi.jpg)
@@ -1266,7 +1381,7 @@ body {
 }
   }
 
-@media only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:31.25em), only screen and (min-resolution:2dppx) and (min-width:31.25em) {
+@media only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:25.875em), only screen and (min-resolution:2dppx) and (min-width:25.875em) {
 
 .wrapper-container {
     background-image: url(../../assets/images/wrapper-main--smaller-hi-dpi.jpg)

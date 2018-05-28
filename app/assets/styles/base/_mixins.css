@@ -4,32 +4,44 @@
 $bpLarger: 75em;     //1200px
 $bpLarge: 68.75em;    // 1100px
 $bpMedium: 56.25em;   // 900px
-$bpSmall: 37.5em;     // 600px
-$bpSmaller: 31.25em; // 500px
-$bpSmallest: 20em; // 320px
-$retinaRes:2dppx;*/
+$bpSmall:37.5em;     // 600px
+$bpSmaller: 23.43em; //414px
+31.25em; // 500px
+$bpSmallest: 23.43em; // 375px
+default:20em;    //320px
+$retinaRes:2dppx;
+600x320
+320x600
+
+*/
 
 
 @define-mixin atSmallest {
-  @media (min-width:20em) {
+  @media (min-width:23.43em) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atSmallestLandscape {
+  @media (min-width:23.43em) and (min-height:20em) {
     @mixin-content;
   }
 }
 
 @define-mixin atSmallestRetina {
-  @media only screen and (min-resolution:2dppx) and (min-width:20em) {
+  @media only screen and (min-resolution:2dppx) and (min-width:23.43em) {
     @mixin-content;
   }
 }
 
 @define-mixin atSmaller {
-  @media (min-width:31.25em) {
+  @media (min-width:25.875em) {
     @mixin-content;
   }
 }
 
 @define-mixin atSmallerRetina {
-  @media only screen and (min-resolution:2dppx) and (min-width:31.25em) {
+  @media only screen and (min-resolution:2dppx) and (min-width:25.875em) {
     @mixin-content;
   }
 }

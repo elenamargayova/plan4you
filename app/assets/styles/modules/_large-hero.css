@@ -47,14 +47,25 @@
 
 .large-hero {
   width: 85vw;
-  padding: 5rem 0;
+  padding: 5rem 0 0 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content:center;
+  @mixin atSmallest {
+    align-items: flex-start;
+    margin: 0 0 0 2.25rem;
+    padding: 0;
+  }
+  @mixin atSmallestLandscape {
+    margin-left: 7rem;
+    padding: 0;
+  }
+
 
   @mixin atSmall {
     width: 65vw;
+    padding: 5rem 0;
   }
   @mixin atMedium {
     width: 40vw;
@@ -69,6 +80,15 @@ h1 {
   font-family: Mistral;
   font-weight: 500;
   margin: 0;
+  @mixin atSmallest {
+    margin: 0px 0 2rem 0;
+  }
+  @mixin atSmallestLandscape {
+    margin: 0rem;
+    padding: 0;
+    font-size: 2.5rem;
+  }
+
 }
 
 ul {
@@ -76,16 +96,33 @@ ul {
   font-size: 2.25rem;
   margin-left: 5rem;
 
+  @mixin atSmallest {
+    margin: 0 0 5rem 5rem;
+  }
+
+  @mixin atSmallestLandscape {
+    margin: 0rem;
+    padding: 0;
+    font-size: 1.25rem;
+  }
+
   li:before {
      content: "\2764 \0020";
     /* content: "\2661 \0020"; */
     /* content: "\2665 \0020"; */
     /* content: "\10E6 \0020"; */
     margin: 0 1rem 0 -3.5rem;
+    @mixin atSmallestLandscape {
+      margin: 0px 1rem 0 -2.5rem;
+    }
   }
 
   li {
     margin:4rem 0rem;
+    @mixin atSmallestLandscape {
+      margin: 2rem 0rem;
+    }
+
   }
 }
 
@@ -93,7 +130,12 @@ ul {
   background-color: rgba(255, 255, 255, 0.5);
   color: #000;
   margin-left: 3rem;
-
+  @mixin atSmallest {
+    margin: 2rem 0 0 1.25rem;
+  }
+  @mixin atSmallestLandscape {
+    margin: 0 0 0 2rem;
+  }
   @mixin atSmall {
     margin-left: 4rem;
   }
