@@ -12,7 +12,7 @@ cursor: pointer;
   width: 20.5rem;
   height: 10rem;
 }
-@mixin atSmall {
+@mixin atSmallPortrait {
   width: 45.5rem;
     height: 10rem;
   border-radius: 0.6rem;

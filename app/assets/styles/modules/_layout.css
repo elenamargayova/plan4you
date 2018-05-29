@@ -13,13 +13,13 @@ html {
   @mixin atSmaller{
     font-size: 43.75%;
   }
-  @mixin atSmall{
+  @mixin atSmallPortrait{
     font-size: 50%;
   }
-  @mixin atMedium {
+  @mixin atMediumPortrait {
     font-size: 56.25%;
   }
-  @mixin atLarge {
+  @mixin atLargePortrait {
     font-size: 62.5%;
   }
 }

@@ -1,115 +1,283 @@
-/* $bpLargest: 125em;     //>2000px */
-/*$bpLargest: 125em;     //>2000px
-120em //1920px
-$bpLarger: 75em;     //1200px
-$bpLarge: 68.75em;    // 1100px
-$bpMedium: 56.25em;   // 900px
-$bpSmall:37.5em;     // 600px
-$bpSmaller: 23.43em; //414px
-31.25em; // 500px
-$bpSmallest: 23.43em; // 375px
-default:20em;    //320px
-$retinaRes:2dppx;
-600x320
-320x600
 
+/*Pixels to ems px/16=em
+320px = 20em;
+360px = 22.5em;
+375px = 23.43em;
+414px = 25.875em;
+560px = 35em;
+600px = 37.5em;
+640px = 40em;
+720px = 45em;
+736px = 46em;
+768px = 48em;
+800px = 50em;
+900px = 56.25em;
+1024px = 64em;
+1080px = 67.5em;
+1200px = 75em;
+1280px = 80em;
+1366px = 85.375em;
+1440px = 90em;
+1920px = 120em;
+2000px = 125em;
+2560px = 160em;
 */
 
 
+/**320x560px**/
 @define-mixin atSmallest {
-  @media (min-width:23.43em) {
+  @media (min-width:20em)  {
     @mixin-content;
   }
 }
-
+/**320x560px**/
+@define-mixin atSmallestPortrait {
+  @media (min-width:20em) and (min-height:35em)  {
+    @mixin-content;
+  }
+}
+/**560x320px**/
 @define-mixin atSmallestLandscape {
-  @media (min-width:23.43em) and (min-height:20em) {
+  @media (min-width:35em) and (min-height:20em) {
     @mixin-content;
   }
 }
-
+/**min-width:320px**/
 @define-mixin atSmallestRetina {
-  @media only screen and (min-resolution:2dppx) and (min-width:23.43em) {
+  @media only screen and (min-resolution:2dppx) and (min-width:20em) {
     @mixin-content;
   }
 }
 
+/**414x736px**/
 @define-mixin atSmaller {
   @media (min-width:25.875em) {
     @mixin-content;
   }
 }
-
+/**414x736px**/
+@define-mixin atSmallerPortrait {
+  @media (min-width:25.875em) and (min-height:46em)  {
+    @mixin-content;
+  }
+}
+/**736x414px**/
+@define-mixin atSmallerLandscape {
+  @media (min-width:46em) and (min-height:25.875em)  {
+    @mixin-content;
+  }
+}
+/**min-width:414px**/
 @define-mixin atSmallerRetina {
   @media only screen and (min-resolution:2dppx) and (min-width:25.875em) {
     @mixin-content;
   }
 }
 
+/**720x1024px**/
+@define-mixin atXSmall {
+  @media (min-width: 45em) {
+    @mixin-content;
+  }
+}
+/**720x1024px**/
+@define-mixin atXSmallPortrait {
+  @media (min-width: 45em) and (min-height:64em) {
+    @mixin-content;
+  }
+}
+/**1024x720px**/
+@define-mixin atXSmallLandscape {
+  @media (min-width:64em) and (min-height:45em){
+    @mixin-content;
+  }
+}
+/**min-width:720px**/
+@define-mixin atXSmallRetina {
+  @media only screen and (min-resolution:2dppx) and (min-width: 45em) {
+    @mixin-content;
+  }
+}
 
+/**768x1366px**/
 @define-mixin atSmall {
-  @media (min-width: 37.5em) {
+  @media (min-width: 48em) {
     @mixin-content;
   }
 }
-
-
+/**768x1366px**/
+@define-mixin atSmallPortrait {
+  @media (min-width: 48em) and (min-height:85.375em) {
+    @mixin-content;
+  }
+}
+/**1366x768px**/
+@define-mixin atSmallLandscape {
+  @media (min-width: 85.375em) and (min-height:48em) {
+    @mixin-content;
+  }
+}
+/**min-width:768px**/
 @define-mixin atSmallRetina {
-  @media only screen and (min-resolution:2dppx) and (min-width: 37.5em) {
+  @media only screen and (min-resolution:2dppx) and (min-width:48em) {
     @mixin-content;
   }
 }
 
+
+/**800x1280px**/
 @define-mixin atMedium {
-  @media (min-width: 56.25em) {
+  @media (min-width: 50em) {
     @mixin-content;
   }
 }
-
+/**800x1280px**/
+@define-mixin atMediumPortrait {
+  @media (min-width: 50em) and (min-height:80em) {
+    @mixin-content;
+  }
+}
+/**1280x800px**/
+@define-mixin atMediumLandscape {
+  @media (min-width: 80em) and (min-height:50em) {
+    @mixin-content;
+  }
+}
+/**min-width:800px**/
 @define-mixin atMediumRetina {
-  @media only screen and (min-resolution:2dppx) and (min-width: 56.25em) {
+  @media only screen and (min-resolution:2dppx) and (min-width: 50em) {
     @mixin-content;
   }
 }
 
+
+/**900x1440px**/
 @define-mixin atLarge {
-  @media (min-width:68.75em) {
+  @media (min-width: 56.25em) and (min-height:90em) {
     @mixin-content;
   }
 }
-
+/**900x1440px**/
+@define-mixin atLargePortrait {
+  @media (min-width: 56.25em) and (min-height:90em) {
+    @mixin-content;
+  }
+}
+/**1440x900px**/
+@define-mixin atLargeLandscape {
+  @media (min-width: 90em) and (min-height:56.25em) {
+    @mixin-content;
+  }
+}
+/**min-width:900px**/
 @define-mixin atLargeRetina {
-  @media only screen and (min-resolution:2dppx) and (min-width:68.75em) {
+  @media only screen and (min-resolution:2dppx) and (min-width:56.25em) {
+    @mixin-content;
+  }
+}
+
+/**1024x1280px**/
+@define-mixin atXLarge {
+  @media (min-width: 64em) {
+    @mixin-content;
+  }
+}
+/**1024x1280px**/
+@define-mixin atXLargePortrait {
+  @media (min-width: 64em) and (min-height:80em) {
+    @mixin-content;
+  }
+}
+/**1280x1024px**/
+@define-mixin atXLargeLandscape {
+  @media (min-width: 80em) and (min-height:64em) {
+    @mixin-content;
+  }
+}
+/**min-width:1024px**/
+@define-mixin atXLargeRetina {
+  @media only screen and (min-resolution:2dppx) and (min-width:64em) {
     @mixin-content;
   }
 }
 
 
-
+/**1080x1920px**/
 @define-mixin atLarger {
-  @media (min-width: 75em) {
+  @media (min-width: 67.5em) {
     @mixin-content;
   }
 }
 
+/**1080x1920px**/
+@define-mixin atLargerPortrait {
+  @media (min-width: 67.5em) and (min-height:120em) {
+    @mixin-content;
+  }
+}
+/**1920x1080px**/
+@define-mixin atLargerLandscape {
+  @media (min-width:120em) and (min-height:67.5em) {
+    @mixin-content;
+  }
+}
+/**min-width:1080px**/
 @define-mixin atLargerRetina {
-  @media only screen and (min-resolution:2dppx) and (min-width: 75em) {
+  @media only screen and (min-resolution:2dppx) and (min-width: 67.5em) {
     @mixin-content;
   }
 }
 
-
+/**1440x2560px**/
 @define-mixin atLargest {
-  @media (min-width:120em) {
+  @media (min-width: 90em) {
+    @mixin-content;
+  }
+}
+/**1440x2560px**/
+@define-mixin atLargestPortrait {
+  @media (min-width: 90em) and (min-height:160em) {
+    @mixin-content;
+  }
+}
+/**2560x1440px**/
+@define-mixin atLargestLandscape {
+  @media (min-width:160em) and (min-height:90em) {
+    @mixin-content;
+  }
+}
+/**min-width:1440px**/
+@define-mixin atLargestRetina {
+  @media only screen and (min-resolution:2dppx) and (min-width:90em) {
     @mixin-content;
   }
 }
 
-@define-mixin atLargestRetina {
-  @media only screen and (min-resolution:2dppx) and (min-width:120em) {
+/**1440x2560px**/
+@define-mixin atXLargest {
+  @media (min-width: 125em) {
     @mixin-content;
   }
 }
+/**1440x2560px**/
+@define-mixin atXLargestPortrait {
+  @media (min-width: 125em) and (min-height:160em) {
+    @mixin-content;
+  }
+}
+/**2560x1440px**/
+@define-mixin atXLargestLandscape {
+  @media (min-width:125em) and (min-height:90em) {
+    @mixin-content;
+  }
+}
+/**min-width:1440px**/
+@define-mixin atXLargestRetina {
+  @media only screen and (min-resolution:2dppx) and (min-width:125em) {
+    @mixin-content;
+  }
+}
+
 
 
 @define-mixin clearfix {

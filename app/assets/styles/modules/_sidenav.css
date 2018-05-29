@@ -7,7 +7,7 @@
   cursor:pointer;
   padding: 1rem 1.5rem;
 
-  @mixin atMedium {
+  @mixin atMediumPortrait {
     display:none;
   }
 }

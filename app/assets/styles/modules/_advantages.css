@@ -3,6 +3,8 @@
   align-items: center;
   justify-content: flex-end;
   height: 100vh;
+  line-height: 1.25;
+  margin: 0 0 4rem 0;
 }
 
 .advantages-imgBg-container {
@@ -12,19 +14,19 @@
   padding: 1.5rem;
   background-image: url(../../assets/images/advantages--smaller.jpg);
 
-    @mixin atSmall {
+    @mixin atSmallPortrait {
       background-image: url(../../assets/images/advantages--small.jpg);
     }
-    @mixin atMedium {
+    @mixin atMediumPortrait {
       background-image: url(../../assets/images/advantages--medium.jpg);
     }
-    /* @mixin atLarge {
+    /* @mixin atLargePortrait {
       background-image: url(../../assets/images/advantages--large.jpg);
     } */
-    @mixin atLarger {
+    @mixin atLargerPortrait {
       background-image: url(../../assets/images/advantages--large.jpg);
     }
-    @mixin atLargest {
+    @mixin atLargestPortrait {
       background-image: url(../../assets/images/advantages--largest.jpg);
     }
 
@@ -56,6 +58,9 @@
   text-align: center;
   display: flex;
   align-items: center;
+  @mixin atSmallest {
+    font-size: 2.85rem;
+  }
 }
 
 .advantage1 {
@@ -65,6 +70,10 @@
   width: 57vw;
   padding-top: 4rem;
   margin-right: 7.5rem;
+  @mixin atSmallest {
+    width: 90vw;
+    margin-right: 0rem;
+  }
 }
 
 .advantage2 {
@@ -74,6 +83,11 @@
   transform: rotate(-15deg);
   padding-top: 28.5rem;
   width: 35vw;
+  @mixin atSmallest {
+    transform: rotate(-10deg);
+    padding-top: 0rem;
+    width: 90vw;
+  }
 }
 
 .advantage3 {
@@ -81,8 +95,15 @@
   height: 25vh;
   transform: rotate(10deg);
   width: 46vw;
+  @mixin atSmallest {
+    height: 15vh;
+    width: 86vw;
+  }
+
+
 }
 
 .advantages-btn {
-    margin: 35px 0px 75px 0px;
+    /* margin: 35px 0px 75px 0px; */
+    margin: 2rem 0px 0rem 0px;
 }

@@ -1,6 +1,6 @@
 .header {
   display: none;
-  @mixin atMedium {
+  @mixin atMediumPortrait {
     display: block;
     font-size: 2rem;
     height: 3.5rem;

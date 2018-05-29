@@ -23,18 +23,21 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    @mixin atSmallestPortrait {
+      width: 90%;
+    }
   }
   &__description {
     text-align: center;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   font-weight: 300;
   line-height: 1.65;
   margin: 3rem 0;
   }
   &__close {
     position: absolute;
-    top: 2rem;
-  right: 2rem;
+    top: 2.75rem;
+  right: 4.25rem;
   font-size: 3rem;
     transform: scaleX(1.2);
     transform-origin: 100% 0;

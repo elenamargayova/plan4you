@@ -1,49 +1,77 @@
 .home-container {
-  background-image: url(../../assets/images/large-hero--smaller.jpg);
+  background-image: url(../../assets/images/large-hero--default.jpg);
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
 
+  @mixin atSmallest {
+    background-image: url(../../assets/images/large-hero--smallest.jpg);
+  }
+  @mixin atSmaller {
+    background-image: url(../../assets/images/large-hero--smaller.jpg);
+  }
+  @mixin atXSmall {
+    background-image: url(../../assets/images/large-hero--Xsmall.jpg);
+  }
   @mixin atSmall {
     margin-bottom: 2rem;
     background-image: url(../../assets/images/large-hero--small.jpg);
   }
-
   @mixin atMedium {
     top: 2rem;
     background-image: url(../../assets/images/large-hero--medium.jpg);
   }
-  /* @mixin atLarge {
+  @mixin atLarge {
     background-image: url(../../assets/images/large-hero--large.jpg);
-  } */
+  }
+  @mixin atXLarge {
+    background-image: url(../../assets/images/large-hero--Xlarge.jpg);
+  }
   @mixin atLarger {
-    background-image: url(../../assets/images/large-hero--large.jpg);
+    background-image: url(../../assets/images/large-hero--larger.jpg);
   }
   @mixin atLargest {
     background-image: url(../../assets/images/large-hero--largest.jpg);
   }
+  @mixin atXLargest {
+    background-image: url(../../assets/images/large-hero--Xlargest.jpg);
+  }
 
+
+  @mixin atSmallestRetina {
+    background-image: url(../../assets/images/large-hero--default-hi-dpi.jpg);
+  }
   @mixin atSmallerRetina {
     background-image: url(../../assets/images/large-hero--smaller-hi-dpi.jpg);
   }
-
+  @mixin atXSmallRetina {
+    background-image: url(../../assets/images/large-hero--Xsmall-hi-dpi.jpg);
+  }
   @mixin atSmallRetina {
     background-image: url(../../assets/images/large-hero--small-hi-dpi.jpg);
   }
   @mixin atMediumRetina {
     background-image: url(../../assets/images/large-hero--medium-hi-dpi.jpg);
   }
-  /* @mixin atLargeRetina {
+  @mixin atLargeRetina {
     background-image: url(../../assets/images/large-hero--large-hi-dpi.jpg);
-  } */
+  }
+  @mixin atXLargeRetina {
+    background-image: url(../../assets/images/large-hero--Xlarge-hi-dpi.jpg);
+  }
   @mixin atLargerRetina {
-    background-image: url(../../assets/images/large-hero--large-hi-dpi.jpg);
+    background-image: url(../../assets/images/large-hero--larger-hi-dpi.jpg);
   }
   @mixin atLargestRetina {
     background-image: url(../../assets/images/large-hero--largest-hi-dpi.jpg);
   }
+  @mixin atXLargestRetina {
+    background-image: url(../../assets/images/large-hero--Xlargest-hi-dpi.jpg);
+  }
 
 }
+
+
 
 .large-hero {
   width: 85vw;
@@ -52,7 +80,7 @@
   flex-direction: column;
   align-items: center;
   justify-content:center;
-  @mixin atSmallest {
+  @mixin atSmallestPortrait {
     align-items: flex-start;
     margin: 0 0 0 2.25rem;
     padding: 0;
@@ -63,14 +91,14 @@
   }
 
 
-  @mixin atSmall {
+  @mixin atSmallPortrait {
     width: 65vw;
     padding: 5rem 0;
   }
-  @mixin atMedium {
+  @mixin atMediumPortrait {
     width: 40vw;
   }
-  @mixin atLargest {
+  @mixin atLargestPortrait {
     width: 30vw;
   }
 
@@ -80,7 +108,7 @@ h1 {
   font-family: Mistral;
   font-weight: 500;
   margin: 0;
-  @mixin atSmallest {
+  @mixin atSmallestPortrait {
     margin: 0px 0 2rem 0;
   }
   @mixin atSmallestLandscape {
@@ -96,7 +124,7 @@ ul {
   font-size: 2.25rem;
   margin-left: 5rem;
 
-  @mixin atSmallest {
+  @mixin atSmallestPortrait {
     margin: 0 0 5rem 5rem;
   }
 
@@ -130,13 +158,13 @@ ul {
   background-color: rgba(255, 255, 255, 0.5);
   color: #000;
   margin-left: 3rem;
-  @mixin atSmallest {
+  @mixin atSmallestPortrait {
     margin: 2rem 0 0 1.25rem;
   }
   @mixin atSmallestLandscape {
     margin: 0 0 0 2rem;
   }
-  @mixin atSmall {
+  @mixin atSmallPortrait {
     margin-left: 4rem;
   }
 

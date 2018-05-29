@@ -4,4 +4,13 @@
   color: #fff;
   margin: 0;
   height:10rem;
+  @mixin atSmallest {
+    height: 8rem;
+  }
+}
+
+.footer img {
+    @mixin atSmallest {
+      height: 7rem;
+    }
 }
