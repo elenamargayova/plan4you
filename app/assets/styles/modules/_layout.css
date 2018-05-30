@@ -63,4 +63,8 @@ body {
   line-height: 1;
   z-index: 100;
   font-weight: 400;
+  @mixin atXSmall {
+    font-size: 15rem;
+  }
+
 }

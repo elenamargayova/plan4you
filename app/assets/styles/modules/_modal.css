@@ -26,6 +26,9 @@
     @mixin atSmallestPortrait {
       width: 90%;
     }
+    @mixin atSmaller {
+      width: 75%;
+    }
   }
   &__description {
     text-align: center;
@@ -36,15 +39,16 @@
   }
   &__close {
     position: absolute;
-    top: 2.75rem;
-  right: 4.25rem;
-  font-size: 3rem;
+    top: 2.25rem;
+  right: 4rem;
+  font-size: 4rem;
     transform: scaleX(1.2);
     transform-origin: 100% 0;
-    color: $mainBlue;
+    color: #000;
     cursor:pointer;
     &:hover {
       color: $mainOrange;
+      cursor:pointer;
     }
   }
 }

@@ -7,10 +7,16 @@
   @mixin atSmallest {
     height: 8rem;
   }
+  @mixin atXSmall {
+    height: 10rem;
+  }
 }
 
 .footer img {
     @mixin atSmallest {
       height: 7rem;
+    }
+    @mixin atXSmall {
+      height: 8rem;
     }
 }

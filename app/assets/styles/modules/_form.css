@@ -28,11 +28,12 @@ form>div>input{
   margin-bottom:10px;
   background-color: #fff;
   width:76%;
-  @mixin atSmallestPortrait {
-    width:80%;
-  }
   @mixin atSmallest {
+    width:80%;
     font-size: 2.25rem;
+  }
+  @mixin atSmaller {
+    width:75%;
   }
 }
 
@@ -42,20 +43,21 @@ form>div>input:focus,form textarea:focus{
 }
 form textarea{
   border-radius: 5px;
-border: 1px solid #c4c4c4;
-font-size: 0.8em;
-padding: 10px;
-background-color: #fff;
-width: 85%;
-resize: vertical;
-max-height: 200px;
-min-height: 140px;
+  border: 1px solid #c4c4c4;
+  font-size: 0.8em;
+  padding: 10px;
+  background-color: #fff;
+  width: 85%;
+  resize: vertical;
+  max-height: 200px;
+  min-height: 140px;
 
-@mixin atSmallestPortrait {
-  width: 80%;
-}
 @mixin atSmallest {
+  width: 80%;
   font-size: 2.25rem;
+}
+@mixin atSmaller {
+  width: 75%;
 }
 
 }
@@ -67,6 +69,7 @@ form .btn__send{
   background-color: #d59541;
   color: #fff;
   margin: 2rem 0px;
+  cursor:pointer;
 }
 
 /* form .btn:hover{

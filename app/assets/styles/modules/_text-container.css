@@ -14,7 +14,11 @@
   @mixin atSmallest {
     height: 7rem;
   }
-  @mixin atSmallPortrait {
+  @mixin atXSmall {
+    height: 10rem;
+    font-size: 3rem;
+  }
+  @mixin atSmall {
     height: 12rem;
   }
 }
@@ -38,6 +42,9 @@
   @mixin atSmallest {
       transform: translate(-65%, -60%);
   }
+  @mixin atSmaller {
+        transform: translate(-55%, -55%);
+  }
 }
 
 .corner-top-right {
@@ -46,6 +53,9 @@
   transform: translate(55%, -55%);
   @mixin atSmallest {
       transform: translate(65%, -60%);
+  }
+  @mixin atSmaller {
+        transform: translate(55%, -55%);
   }
 }
 
@@ -56,6 +66,9 @@
   @mixin atSmallest {
       transform: translate(-65%, 60%);
   }
+  @mixin atSmaller {
+        transform: translate(-55%, 55%);
+  }
 }
 
 .corner-bottom-right {
@@ -64,6 +77,9 @@
   transform: translate(55%, 55%);
   @mixin atSmallest {
       transform: translate(65%, 60%);
+  }
+  @mixin atSmaller {
+        transform: translate(55%, 55%);
   }
 }
 

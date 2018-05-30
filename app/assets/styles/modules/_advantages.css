@@ -5,6 +5,10 @@
   height: 100vh;
   line-height: 1.25;
   margin: 0 0 4rem 0;
+
+  @mixin atSmaller {
+    line-height: 1.5;
+  }
 }
 
 .advantages-imgBg-container {
@@ -58,8 +62,17 @@
   text-align: center;
   display: flex;
   align-items: center;
+
   @mixin atSmallest {
     font-size: 2.85rem;
+  }
+  @mixin atSmaller {
+    font-size: 3.25rem;
+    max-width: 70rem;
+  }
+  @mixin atXSmall{
+    font-size: 5rem;
+    max-width: 90rem;
   }
 }
 
@@ -73,6 +86,10 @@
   @mixin atSmallest {
     width: 90vw;
     margin-right: 0rem;
+  }
+  @mixin atSmaller {
+    width: 78vw;
+    margin-right: 2rem;
   }
 }
 
@@ -88,6 +105,13 @@
     padding-top: 0rem;
     width: 90vw;
   }
+  @mixin atSmaller {
+    height:10vh;
+    margin: 5rem 0 0 7rem;
+  }
+  @mixin atXSmall{
+    margin: 0rem 0 0 7rem;
+  }
 }
 
 .advantage3 {
@@ -98,6 +122,13 @@
   @mixin atSmallest {
     height: 15vh;
     width: 87vw;
+  }
+  @mixin atSmaller {
+    height: 25vh;
+    margin: 27rem 0 0 7rem;
+  }
+  @mixin atXSmall{
+    margin: 40rem 0 0 15rem;
   }
 
 

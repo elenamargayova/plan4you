@@ -581,12 +581,21 @@ button {
 }
   }
 
-@media (min-width: 48em) and (min-height:85.375em) {
+@media (min-width:25.875em) {
 
 button {
-  width: 45.5rem;
-    height: 10rem;
-  border-radius: 0.6rem
+  font-size: 3.25rem
+
+}
+  }
+
+@media (min-width: 45em) {
+
+button {
+  width: 42.5rem;
+  height: 12.5rem;
+  border-radius: 1rem;
+  font-size: 3.75rem
 
 }
   }
@@ -606,6 +615,20 @@ button span {
 
 button span {
     font-size: 2.25rem
+}
+  }
+
+@media (min-width:25.875em) {
+
+button span {
+    font-size: 4.25rem
+}
+  }
+
+@media (min-width: 45em) {
+
+button span {
+    font-size: 4.75rem
 }
   }
 
@@ -828,7 +851,7 @@ button span {
 }
   }
 
-@media (min-width: 48em) and (min-height:85.375em) {
+@media (min-width: 45em) {
 
 .large-hero {
     width: 65vw;
@@ -882,6 +905,22 @@ button span {
 }
   }
 
+@media (min-width:25.875em) {
+
+.large-hero h1 {
+      font-size: 6.75rem
+
+}
+  }
+
+@media (min-width: 45em) {
+
+.large-hero h1 {
+      font-size: 9.75rem
+
+}
+  }
+
 .large-hero ul {
   list-style: none;
   font-size: 2.25rem;
@@ -904,6 +943,21 @@ button span {
 }
   }
 
+@media (min-width:25.875em) {
+
+.large-hero ul {
+      font-size: 2.75rem
+}
+  }
+
+@media (min-width: 45em) {
+
+.large-hero ul {
+      font-size: 3.75rem;
+      margin-left: 8rem
+}
+  }
+
 .large-hero ul li:before {
      content: "\2764 \0020";
     /* content: "\2661 \0020"; */
@@ -919,6 +973,13 @@ button span {
   }
   }
 
+@media (min-width: 45em) {
+
+.large-hero ul li:before {
+      margin: 0 2rem 0 -6.5rem
+  }
+  }
+
 .large-hero ul li {
     margin:4rem 0rem;
 
@@ -928,6 +989,14 @@ button span {
 
 .large-hero ul li {
       margin: 2rem 0rem
+
+  }
+  }
+
+@media (min-width: 45em) {
+
+.large-hero ul li {
+      margin: 6rem 0rem
 
   }
   }
@@ -959,6 +1028,14 @@ button span {
 
 .large-hero-btn {
     margin-left: 4rem
+
+}
+  }
+
+@media (min-width: 48em) and (min-height:85.375em) {
+
+.large-hero-btn {
+    margin-left: 0rem
 
 }
   }
@@ -1007,17 +1084,18 @@ form>div>input{
   width:76%;
 }
 
-@media (min-width:20em) and (min-height:35em)  {
-
-form>div>input{
-    width:80%
-}
-  }
-
 @media (min-width:20em)  {
 
 form>div>input{
+    width:80%;
     font-size: 2.25rem
+}
+  }
+
+@media (min-width:25.875em) {
+
+form>div>input{
+    width:75%
 }
   }
 
@@ -1028,29 +1106,30 @@ form>div>input:focus,form textarea:focus{
 
 form textarea{
   border-radius: 5px;
-border: 1px solid #c4c4c4;
-font-size: 0.8em;
-padding: 10px;
-background-color: #fff;
-width: 85%;
-resize: vertical;
-max-height: 200px;
-min-height: 140px;
+  border: 1px solid #c4c4c4;
+  font-size: 0.8em;
+  padding: 10px;
+  background-color: #fff;
+  width: 85%;
+  resize: vertical;
+  max-height: 200px;
+  min-height: 140px;
 
 }
-
-@media (min-width:20em) and (min-height:35em)  {
-
-form textarea{
-  width: 80%
-
-}
-  }
 
 @media (min-width:20em)  {
 
 form textarea{
+  width: 80%;
   font-size: 2.25rem
+
+}
+  }
+
+@media (min-width:25.875em) {
+
+form textarea{
+  width: 75%
 
 }
   }
@@ -1063,6 +1142,7 @@ form .btn__send{
   background-color: #d59541;
   color: #fff;
   margin: 2rem 0px;
+  cursor:pointer;
 }
 
 /* form .btn:hover{
@@ -1110,6 +1190,13 @@ form .btn__send{
   }
   }
 
+@media (min-width:25.875em) {
+
+.modal__inner{
+      width: 75%
+  }
+  }
+
 .modal__description {
     text-align: center;
   font-size: 2.5rem;
@@ -1120,19 +1207,20 @@ form .btn__send{
 
 .modal__close {
     position: absolute;
-    top: 2.75rem;
-  right: 4.25rem;
-  font-size: 3rem;
+    top: 2.25rem;
+  right: 4rem;
+  font-size: 4rem;
     -webkit-transform: scaleX(1.2);
             transform: scaleX(1.2);
     -webkit-transform-origin: 100% 0;
             transform-origin: 100% 0;
-    color: #2f5572;
+    color: #000;
     cursor:pointer;
   }
 
 .modal__close:hover {
       color: #d59541;
+      cursor:pointer;
     }
 
 * {
@@ -1237,13 +1325,22 @@ body {
   line-height: 1;
   z-index: 100;
   font-weight: 400;
+
 }
+
+@media (min-width: 45em) {
+
+.section-title {
+    font-size: 15rem
+
+}
+  }
 
 .header {
   display: none;
 }
 
-@media (min-width: 50em) and (min-height:80em) {
+@media (min-width: 50em) {
 
 .header {
     display: block;
@@ -1328,7 +1425,15 @@ body {
 }
   }
 
-@media (min-width: 48em) and (min-height:85.375em) {
+@media (min-width: 45em) {
+
+.text-container {
+    height: 10rem;
+    font-size: 3rem
+}
+  }
+
+@media (min-width: 48em) {
 
 .text-container {
     height: 12rem
@@ -1362,6 +1467,14 @@ body {
 }
   }
 
+@media (min-width:25.875em) {
+
+.corner-top-left {
+        -webkit-transform: translate(-55%, -55%);
+                transform: translate(-55%, -55%)
+}
+  }
+
 .corner-top-right {
   top: 0;
   right: 0;
@@ -1374,6 +1487,14 @@ body {
 .corner-top-right {
       -webkit-transform: translate(65%, -60%);
               transform: translate(65%, -60%)
+}
+  }
+
+@media (min-width:25.875em) {
+
+.corner-top-right {
+        -webkit-transform: translate(55%, -55%);
+                transform: translate(55%, -55%)
 }
   }
 
@@ -1392,6 +1513,14 @@ body {
 }
   }
 
+@media (min-width:25.875em) {
+
+.corner-bottom-left {
+        -webkit-transform: translate(-55%, 55%);
+                transform: translate(-55%, 55%)
+}
+  }
+
 .corner-bottom-right {
   bottom: 0;
   right: 0;
@@ -1404,6 +1533,14 @@ body {
 .corner-bottom-right {
       -webkit-transform: translate(65%, 60%);
               transform: translate(65%, 60%)
+}
+  }
+
+@media (min-width:25.875em) {
+
+.corner-bottom-right {
+        -webkit-transform: translate(55%, 55%);
+                transform: translate(55%, 55%)
 }
   }
 
@@ -1426,6 +1563,13 @@ body {
   line-height: 1.25;
   margin: 0 0 4rem 0;
 }
+
+@media (min-width:25.875em) {
+
+.advantages-container {
+    line-height: 1.5
+}
+  }
 
 .advantages-imgBg-container {
   display: -webkit-box;
@@ -1541,6 +1685,22 @@ body {
 }
   }
 
+@media (min-width:25.875em) {
+
+.advantage {
+    font-size: 3.25rem;
+    max-width: 70rem
+}
+  }
+
+@media (min-width: 45em) {
+
+.advantage {
+    font-size: 5rem;
+    max-width: 90rem
+}
+  }
+
 .advantage1 {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -1557,6 +1717,14 @@ body {
 .advantage1 {
     width: 90vw;
     margin-right: 0rem
+}
+  }
+
+@media (min-width:25.875em) {
+
+.advantage1 {
+    width: 78vw;
+    margin-right: 2rem
 }
   }
 
@@ -1583,6 +1751,21 @@ body {
 }
   }
 
+@media (min-width:25.875em) {
+
+.advantage2 {
+    height:10vh;
+    margin: 5rem 0 0 7rem
+}
+  }
+
+@media (min-width: 45em) {
+
+.advantage2 {
+    margin: 0rem 0 0 7rem
+}
+  }
+
 .advantage3 {
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -1599,6 +1782,25 @@ body {
 .advantage3 {
     height: 15vh;
     width: 87vw
+
+
+}
+  }
+
+@media (min-width:25.875em) {
+
+.advantage3 {
+    height: 25vh;
+    margin: 27rem 0 0 7rem
+
+
+}
+  }
+
+@media (min-width: 45em) {
+
+.advantage3 {
+    margin: 40rem 0 0 15rem
 
 
 }
@@ -1743,9 +1945,20 @@ body {
 @media (min-width:20em)  {
 
 .wrapper-container {
-  -webkit-box-align:center;
-      -ms-flex-align:center;
-          align-items:center
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center
+
+
+}
+  }
+
+@media (min-width: 45em) {
+
+.wrapper-container {
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center
 
 
 }
@@ -1755,7 +1968,16 @@ body {
   -webkit-transform: rotate(-8deg);
           transform: rotate(-8deg);
   margin: 0rem 0rem -4.5rem -9.5rem;
+
 }
+
+@media (min-width: 45em) {
+
+.wrapper-container .section-title {
+    margin: 0rem 0rem -14.5rem -17.5rem
+
+}
+  }
 
 .wrapper-imgBg-container {
   background-repeat: no-repeat;
@@ -1790,14 +2012,21 @@ body {
 }
   }
 
+@media (min-width: 45em) {
+
+.wrapper-types {
+    height: 98vh
+}
+  }
+
 .wrapper {
   position: relative;
 }
 
 .wrapper span {
   position: absolute;
-  bottom: 0.5rem;
-  left: 0.5rem;
+  bottom: 0.75rem;
+  left: 0.75rem;
   font-size: 1.5rem;
 }
 
@@ -1805,6 +2034,15 @@ body {
 
 .wrapper span {
     font-size: 1.75rem
+}
+  }
+
+@media (min-width: 45em) {
+
+.wrapper span {
+    font-size: 2.75rem;
+    bottom: 2rem;
+    left: 2rem
 }
   }
 
@@ -1821,6 +2059,14 @@ body {
 }
   }
 
+@media (min-width: 45em) {
+
+.wrapper img {
+    width: 40vh;
+    height: 40vh
+}
+  }
+
 .contacts-container {
   height: 12rem;
   -webkit-box-align: center;
@@ -1831,6 +2077,13 @@ body {
   font-size: 2rem;
   margin: 0 2rem;
 }
+
+@media (min-width: 45em) {
+
+.contacts-container {
+    font-size: 2.75rem
+}
+  }
 
 .contacts span {
   display: inline-block;
@@ -1868,10 +2121,24 @@ body {
 }
   }
 
+@media (min-width: 45em) {
+
+.footer {
+    height: 10rem
+}
+  }
+
 @media (min-width:20em)  {
 
 .footer img {
       height: 7rem
+}
+  }
+
+@media (min-width: 45em) {
+
+.footer img {
+      height: 8rem
 }
   }
 
@@ -1896,7 +2163,7 @@ body {
 
   }
 
-@media (min-width: 48em) and (min-height:85.375em) {
+@media (min-width: 48em) {
 
 .callme__button {
       height: 5rem;
@@ -1907,7 +2174,7 @@ body {
   }
   }
 
-@media (min-width: 50em) and (min-height:80em) {
+@media (min-width: 50em) {
 
 .callme__button {
       height: 7rem;
@@ -1949,7 +2216,7 @@ body {
 
 /* transition: transform .8s ease-in; */
 
-@media (min-width: 48em) and (min-height:85.375em) {
+@media (min-width: 48em) {
 
 .callme__background {
     height: 5rem;
@@ -1960,7 +2227,7 @@ body {
   }
   }
 
-@media (min-width: 50em) and (min-height:80em) {
+@media (min-width: 50em) {
 
 .callme__background {
       height: 6rem;
@@ -1980,10 +2247,20 @@ body {
 
     }
 
-@media (min-width: 48em) and (min-height:85.375em) {
+@media (min-width:20em)  {
 
 .callme .callme__txt {
-      font-size: 0.3rem
+      font-size: 0.42rem
+
+    }
+  }
+
+@media (min-width: 50em) {
+
+.callme .callme__txt {
+      top: 4rem;
+      font-size: 0.325rem;
+      left: 0.75rem
 
     }
   }
@@ -1994,7 +2271,7 @@ body {
             transform: scale(4);
   }
 
-@media (min-width: 48em) and (min-height:85.375em) {
+@media (min-width: 48em) {
 
 .callme__checkbox:checked~.callme__background {
       -webkit-transform: scale(6);
@@ -2002,7 +2279,7 @@ body {
   }
   }
 
-@media (min-width: 50em) and (min-height:80em) {
+@media (min-width: 50em) {
 
 .callme__checkbox:checked~.callme__background {
       -webkit-transform: scale(8);
@@ -2081,7 +2358,7 @@ body {
   padding: 1rem 1.5rem;
 }
 
-@media (min-width: 50em) and (min-height:80em) {
+@media (min-width: 50em) {
 
 .toggleSidenav {
     display:none

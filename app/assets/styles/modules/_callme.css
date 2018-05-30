@@ -15,13 +15,13 @@
     box-shadow: 0 1rem 3rem rgba($colorBlack, .1);
     text-align: center;
     cursor: pointer;
-    @mixin atSmallPortrait {
+    @mixin atSmall {
       height: 5rem;
       width: 5rem;
       top: 1.5rem;
       right: 2rem;
     }
-    @mixin atMediumPortrait {
+    @mixin atMedium {
       height: 7rem;
       width: 7rem;
       top: 6rem;
@@ -54,14 +54,14 @@
     transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
     /* transition: transform .8s ease-in; */
 
-  @mixin atSmallPortrait {
+  @mixin atSmall {
     height: 5rem;
     width: 5rem;
     top: 1.5rem;
     right: 2rem;
     }
 
-    @mixin atMediumPortrait {
+    @mixin atMedium {
       height: 6rem;
       width: 6rem;
       top: 6.5rem;
@@ -77,8 +77,13 @@
     top: 4.75rem;
     left: 1.1rem;
 
-    @mixin atSmallPortrait {
-      font-size: 0.3rem;
+    @mixin atSmallest {
+      font-size: 0.42rem;
+    }
+    @mixin atMedium {
+      top: 4rem;
+      font-size: 0.325rem;
+      left: 0.75rem;
     }
 
     }
@@ -87,10 +92,10 @@
   &__checkbox:checked~&__background {
     /* font-size: 1px; */
     transform: scale(4);
-    @mixin atSmallPortrait {
+    @mixin atSmall {
       transform: scale(6);
     }
-    @mixin atMediumPortrait {
+    @mixin atMedium {
       transform: scale(8);
     }
   }

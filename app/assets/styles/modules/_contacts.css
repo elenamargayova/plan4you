@@ -4,6 +4,9 @@
   justify-content: space-around;
   font-size: 2rem;
   margin: 0 2rem;
+  @mixin atXSmall {
+    font-size: 2.75rem;
+  }
 }
 
 .contacts span {
