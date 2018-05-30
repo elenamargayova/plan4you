@@ -97,7 +97,7 @@
   width: 46vw;
   @mixin atSmallest {
     height: 15vh;
-    width: 86vw;
+    width: 87vw;
   }
 
 

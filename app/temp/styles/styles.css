@@ -805,7 +805,7 @@ button span {
 
 }
 
-@media (min-width:20em) and (min-height:35em)  {
+@media (min-width:25.875em) and (min-height:46em)  {
 
 .large-hero {
     -webkit-box-align: start;
@@ -1598,7 +1598,7 @@ body {
 
 .advantage3 {
     height: 15vh;
-    width: 86vw
+    width: 87vw
 
 
 }

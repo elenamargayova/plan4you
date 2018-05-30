@@ -80,7 +80,7 @@
   flex-direction: column;
   align-items: center;
   justify-content:center;
-  @mixin atSmallestPortrait {
+  @mixin atSmallerPortrait {
     align-items: flex-start;
     margin: 0 0 0 2.25rem;
     padding: 0;
