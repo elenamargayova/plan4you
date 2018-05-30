@@ -91,11 +91,17 @@
     width: 65vw;
     padding: 5rem 0;
   }
+  @mixin atSmall {
+    width: 75vw;
+  }
   @mixin atMediumPortrait {
-    width: 40vw;
+    width: 80vw;
   }
   @mixin atLargestPortrait {
-    width: 30vw;
+    width: 50vw;
+  }
+  @mixin atXLargest {
+    width: 50vw;
   }
 
 
