@@ -45,10 +45,7 @@
   @mixin atXSmall {
     align-items:center;
   }
-
-
 }
-
 
 .wrapper-container .section-title {
   transform: rotate(-8deg);
@@ -56,7 +53,6 @@
   @mixin atXSmall {
     margin: 0rem 0rem -14.5rem -17.5rem;
   }
-
 }
 
 .wrapper-imgBg-container {
@@ -78,6 +74,9 @@
   margin: 0.5rem;
   @mixin atSmallest {
     height: 60vh;
+  }
+  @mixin atSmallestLandscape {
+    height: 98vh;
   }
   @mixin atXSmall {
     height: 98vh;
@@ -109,6 +108,10 @@
   @mixin atSmallest {
     width: 25vh;
     height: 25vh;
+  }
+  @mixin atSmallestLandscape {
+    width: 40vh;
+    height: 40vh;
   }
   @mixin atXSmall {
     width: 40vh;

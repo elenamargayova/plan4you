@@ -11,7 +11,7 @@
     top: 1.5rem;
     right: 2rem;
     border-radius: 50%;
-    z-index: 80;
+    z-index: 110;
     box-shadow: 0 1rem 3rem rgba($colorBlack, .1);
     text-align: center;
     cursor: pointer;

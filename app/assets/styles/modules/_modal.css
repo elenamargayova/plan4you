@@ -6,29 +6,34 @@
   bottom: 0;
   left: 0;
   right: 0;
-  opacity:0;
+  opacity: 0;
   visibility: hidden;
   transform: scale(1.2);
   transition: all .3s ease-out;
-.section-title{
-  font-size: 11rem;
-}
-
-&--is-visible{
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1);
-
-}
-  &__inner{
+  .section-title {
+    font-size: 11rem;
+    @mixin atSmallest {
+      font-size: 7.5rem;
+    }
+  }
+  &--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+  &__inner {
     position: absolute;
     text-align: center;
     width: 60%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     @mixin atSmallestPortrait {
       width: 90%;
+      top: 50%;
+    }
+    @mixin atSmallestLandscape {
+      top: 52%;
     }
     @mixin atSmaller {
       width: 75%;
@@ -36,30 +41,33 @@
   }
   &__description {
     text-align: center;
-  font-size: 2.5rem;
-  font-weight: 300;
-  line-height: 1.65;
-  margin: 3rem 0;
-@mixin atXSmall {
-    font-size: 3.5rem;
-    margin: 5rem 10rem;
-}
-@mixin atMedium {
-    margin: 5rem 0rem;
-}
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.65;
+    margin: 3rem 0;
+    @mixin atSmallestLandscape {
+      margin: 1.5rem 0;
+    }
+    @mixin atXSmall {
+      font-size: 3.5rem;
+      margin: 5rem 10rem;
+    }
+    @mixin atMedium {
+      margin: 5rem 0rem;
+    }
   }
   &__close {
     position: absolute;
     top: 2.25rem;
-  right: 4rem;
-  font-size: 4rem;
+    right: 4rem;
+    font-size: 4rem;
     transform: scaleX(1.2);
     transform-origin: 100% 0;
     color: #000;
-    cursor:pointer;
+    cursor: pointer;
     &:hover {
       color: $mainOrange;
-      cursor:pointer;
+      cursor: pointer;
     }
   }
 }

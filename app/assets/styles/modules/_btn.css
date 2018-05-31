@@ -10,7 +10,7 @@ cursor: pointer;
 @mixin atSmallestLandscape {
   font-size: 2.5rem;
   width: 25.5rem;
-  height: 7.5rem;
+  height: 8.5rem;
 }
 @mixin atSmallerPortrait {
   font-size: 3.25rem;

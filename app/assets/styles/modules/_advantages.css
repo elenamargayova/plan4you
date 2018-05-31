@@ -3,12 +3,7 @@
   align-items: center;
   justify-content: flex-end;
   height: 100vh;
-  line-height: 1.25;
   margin: 0 0 4rem 0;
-
-  @mixin atSmaller {
-    line-height: 1.5;
-  }
 }
 
 .advantages-imgBg-container {
@@ -62,13 +57,20 @@
   text-align: center;
   display: flex;
   align-items: center;
+  line-height: 1.25;
 
-  @mixin atSmallest {
+  @mixin atSmallestPortrait {
     font-size: 2.85rem;
   }
-  @mixin atSmaller {
+  @mixin atSmallestLandscape {
+    font-size: 2.5rem;
+    max-width: 70rem;
+    line-height: 1.2;
+  }
+  @mixin atSmallerPortrait {
     font-size: 3.25rem;
     max-width: 70rem;
+    line-height: 1.5;
   }
   @mixin atXSmall{
     font-size: 5rem;
@@ -90,7 +92,13 @@
     width: 90vw;
     margin-right: 0rem;
   }
-  @mixin atSmaller {
+  @mixin atSmallestLandscape {
+    width: 55vw;
+    margin-right: 10rem;
+    padding-top: 0;
+    padding-bottom: 2rem;
+  }
+  @mixin atSmallerPortrait {
     width: 78vw;
     margin-right: 2rem;
   }
@@ -125,7 +133,13 @@
     padding-top: 0rem;
     width: 90vw;
   }
-  @mixin atSmaller {
+  @mixin atSmallestLandscape {
+    height: 10vh;
+    margin: 0rem 0 0 0rem;
+    padding: 15rem 0 0 0;
+    width: 50vw;
+  }
+  @mixin atSmallerPortrait{
     height:10vh;
     margin: 5rem 0 0 7rem;
   }
@@ -159,7 +173,12 @@
     height: 15vh;
     width: 87vw;
   }
-  @mixin atSmaller {
+  @mixin atSmallestLandscape {
+    margin: 0rem 0rem 0 -5rem;
+    width: 56vw;
+    padding-bottom: 5rem;
+  }
+  @mixin atSmallerPortrait {
     height: 25vh;
     margin: 27rem 0 0 7rem;
   }
@@ -175,9 +194,6 @@
   @mixin atLargest{
       margin: 70rem 0 0 20rem;
   }
-
-
-
 }
 
 .advantages-btn {

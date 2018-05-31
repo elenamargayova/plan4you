@@ -9,6 +9,9 @@ font-size: 3rem;
 @mixin atSmallestPortrait {
   margin: 0rem;
 }
+@mixin atSmallestLandscape {
+  font-size: 2.5rem;
+}
 
 }
 
@@ -35,6 +38,10 @@ form>div>input{
     width:80%;
     font-size: 2.25rem;
   }
+  @mixin atSmallestLandscape {
+    font-size: 2rem;
+    padding: 1.25rem 5%;
+  }
   @mixin atSmaller {
     width:75%;
   }
@@ -59,6 +66,9 @@ form textarea{
   width: 80%;
   font-size: 2.25rem;
 }
+@mixin atSmallestLandscape {
+  font-size: 2rem;
+}
 @mixin atSmaller {
   width: 75%;
 }
@@ -72,6 +82,9 @@ form .btn__send{
   color: #fff;
   margin: 2rem 0px;
   cursor:pointer;
+  @mixin atSmallestLandscape {
+    padding: 1.25rem 3rem;
+  }
 }
 
 /* form .btn:hover{
