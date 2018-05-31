@@ -10,6 +10,10 @@
   visibility: hidden;
   transform: scale(1.2);
   transition: all .3s ease-out;
+.section-title{
+  font-size: 11rem;
+}
+
 &--is-visible{
   opacity: 1;
   visibility: visible;
@@ -36,6 +40,13 @@
   font-weight: 300;
   line-height: 1.65;
   margin: 3rem 0;
+@mixin atXSmall {
+    font-size: 3.5rem;
+    margin: 5rem 10rem;
+}
+@mixin atMedium {
+    margin: 5rem 0rem;
+}
   }
   &__close {
     position: absolute;

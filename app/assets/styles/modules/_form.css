@@ -18,6 +18,9 @@ form>div{
   @mixin atSmallestPortrait {
     width:100%;
   }
+  @mixin atXSmall {
+    width:50%;
+  }
 
 }
 form>div>input{
@@ -49,8 +52,8 @@ form textarea{
   background-color: #fff;
   width: 85%;
   resize: vertical;
-  max-height: 200px;
-  min-height: 140px;
+  max-height: 20rem;
+  min-height: 18rem;
 
 @mixin atSmallest {
   width: 80%;
@@ -59,7 +62,6 @@ form textarea{
 @mixin atSmaller {
   width: 75%;
 }
-
 }
 form .btn__send{
   border-radius: 5px;

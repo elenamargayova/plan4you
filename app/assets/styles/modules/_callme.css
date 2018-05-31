@@ -15,32 +15,26 @@
     box-shadow: 0 1rem 3rem rgba($colorBlack, .1);
     text-align: center;
     cursor: pointer;
-    @mixin atSmall {
-      height: 5rem;
-      width: 5rem;
-      top: 1.5rem;
+    @mixin atXSmall {
+      height: 9rem;
+      width: 9rem;
+      top: 2rem;
       right: 2rem;
     }
     @mixin atMedium {
-      height: 7rem;
-      width: 7rem;
       top: 6rem;
-      right: 2.5rem;
     }
     /* transform: scale(1.2);
     transition:transform .8s cubic-bezier(0.86, 0, 0.07, 1); */
-.contbtn {
-    background: url(../../assets/images/contacts.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 300;
-    height: 85%;
-    margin: 0.8rem 0.25rem;
-}
-
+    .contbtn {
+      background: url(../../assets/images/contacts.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: 300;
+      height: 85%;
+      margin: 0.8rem 0.25rem;
+    }
   }
-
-
   &__background {
     font-size: 0;
     position: fixed;
@@ -53,53 +47,48 @@
     z-index: 70;
     transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
     /* transition: transform .8s ease-in; */
-
-  @mixin atSmall {
-    height: 5rem;
-    width: 5rem;
-    top: 1.5rem;
-    right: 2rem;
+    @mixin atXSmall {
+      height: 8rem;
+      width: 8rem;
+      top: 2rem;
+      right: 2rem;
     }
-
     @mixin atMedium {
       height: 6rem;
       width: 6rem;
       top: 6.5rem;
       right: 3.5rem;
     }
-
   }
-
   .callme__txt {
     font-size: 0.4rem;
     position: absolute;
     font-weight: 200;
     top: 4.75rem;
     left: 1.1rem;
-
     @mixin atSmallest {
       font-size: 0.42rem;
     }
+    @mixin atXSmall {
+      top: 5.5rem;
+    }
+
     @mixin atMedium {
       top: 4rem;
       font-size: 0.325rem;
       left: 0.75rem;
     }
-
-    }
-
-
+  }
   &__checkbox:checked~&__background {
     /* font-size: 1px; */
     transform: scale(4);
-    @mixin atSmall {
-      transform: scale(6);
+    @mixin atXSmall {
+      transform: scale(7);
     }
     @mixin atMedium {
       transform: scale(8);
     }
   }
-
   &__icon {
     position: relative;
     margin-top: 3.5rem;
@@ -114,7 +103,6 @@
       position: absolute;
       left: 0;
       transition: all .2s;
-
     }
     &::before {
       top: -.8rem;
@@ -123,8 +111,7 @@
       top: .8rem;
     }
   }
-
-  &__button:hover  {
+  &__button:hover {
     transform: scale(1.1);
     transition: transform .2s ease-in;
   }

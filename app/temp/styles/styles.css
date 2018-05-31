@@ -864,10 +864,19 @@ button span {
 }
   }
 
+@media (min-width: 48em) {
+
+.large-hero {
+    width: 75vw
+
+
+}
+  }
+
 @media (min-width: 50em) and (min-height:80em) {
 
 .large-hero {
-    width: 40vw
+    width: 80vw
 
 
 }
@@ -876,7 +885,16 @@ button span {
 @media (min-width: 90em) and (min-height:160em) {
 
 .large-hero {
-    width: 30vw
+    width: 50vw
+
+
+}
+  }
+
+@media (min-width: 125em) {
+
+.large-hero {
+    width: 50vw
 
 
 }
@@ -1085,6 +1103,14 @@ form>div{
 }
   }
 
+@media (min-width: 45em) {
+
+form>div{
+    width:50%
+
+}
+  }
+
 form>div>input{
   border-radius: 10px;
   border:1px solid #c4c4c4;
@@ -1123,9 +1149,8 @@ form textarea{
   background-color: #fff;
   width: 85%;
   resize: vertical;
-  max-height: 200px;
-  min-height: 140px;
-
+  max-height: 20rem;
+  min-height: 18rem;
 }
 
 @media (min-width:20em)  {
@@ -1133,7 +1158,6 @@ form textarea{
 form textarea{
   width: 80%;
   font-size: 2.25rem
-
 }
   }
 
@@ -1141,7 +1165,6 @@ form textarea{
 
 form textarea{
   width: 75%
-
 }
   }
 
@@ -1174,6 +1197,10 @@ form .btn__send{
           transform: scale(1.2);
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
+}
+
+.modal .section-title{
+  font-size: 11rem;
 }
 
 .modal--is-visible{
@@ -1214,6 +1241,21 @@ form .btn__send{
   font-weight: 300;
   line-height: 1.65;
   margin: 3rem 0;
+  }
+
+@media (min-width: 45em) {
+
+.modal__description {
+    font-size: 3.5rem;
+    margin: 5rem 10rem
+  }
+  }
+
+@media (min-width: 50em) {
+
+.modal__description {
+    margin: 5rem 0rem
+  }
   }
 
 .modal__close {
@@ -1712,6 +1754,13 @@ body {
 }
   }
 
+@media (min-width: 50em) {
+
+.advantage {
+    font-size: 4.25rem
+}
+  }
+
 .advantage1 {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -1721,6 +1770,8 @@ body {
   width: 57vw;
   padding-top: 4rem;
   margin-right: 7.5rem;
+
+
 }
 
 @media (min-width:20em)  {
@@ -1728,6 +1779,8 @@ body {
 .advantage1 {
     width: 90vw;
     margin-right: 0rem
+
+
 }
   }
 
@@ -1736,6 +1789,47 @@ body {
 .advantage1 {
     width: 78vw;
     margin-right: 2rem
+
+
+}
+  }
+
+@media (min-width: 48em) {
+
+.advantage1 {
+    width: 86vw
+
+
+}
+  }
+
+@media (min-width: 50em) {
+
+.advantage1 {
+      margin-right: 10rem;
+      padding-top: 4rem
+
+
+}
+  }
+
+@media (min-width: 67.5em) {
+
+.advantage1 {
+    width: 72vw;
+    margin-right: 15rem
+
+
+}
+  }
+
+@media (min-width: 67.5em) {
+
+.advantage1 {
+    width: 53vw;
+    margin-right: 30rem
+
+
 }
   }
 
@@ -1750,6 +1844,7 @@ body {
           transform: rotate(-15deg);
   padding-top: 28.5rem;
   width: 35vw;
+
 }
 
 @media (min-width:20em)  {
@@ -1759,6 +1854,7 @@ body {
             transform: rotate(-10deg);
     padding-top: 0rem;
     width: 90vw
+
 }
   }
 
@@ -1767,6 +1863,7 @@ body {
 .advantage2 {
     height:10vh;
     margin: 5rem 0 0 7rem
+
 }
   }
 
@@ -1774,6 +1871,42 @@ body {
 
 .advantage2 {
     margin: 0rem 0 0 7rem
+
+}
+  }
+
+@media (min-width: 48em) {
+
+.advantage2 {
+      padding-top: 2rem
+
+}
+  }
+
+@media (min-width: 50em) {
+
+.advantage2 {
+      padding-top: 8rem
+
+}
+  }
+
+@media (min-width: 67.5em) {
+
+.advantage2 {
+      padding-top: 35rem;
+      width: 75vw
+
+}
+  }
+
+@media (min-width: 90em) {
+
+.advantage2 {
+    padding-top: 15rem;
+    width: 55vw;
+    margin: 0rem 0 0 2rem
+
 }
   }
 
@@ -1786,6 +1919,7 @@ body {
   width: 46vw;
 
 
+
 }
 
 @media (min-width:20em)  {
@@ -1793,6 +1927,7 @@ body {
 .advantage3 {
     height: 15vh;
     width: 87vw
+
 
 
 }
@@ -1805,13 +1940,45 @@ body {
     margin: 27rem 0 0 7rem
 
 
+
 }
   }
 
 @media (min-width: 45em) {
 
 .advantage3 {
-    margin: 40rem 0 0 15rem
+    margin: 40rem 0 0 18rem
+
+
+
+}
+  }
+
+@media (min-width: 48em) {
+
+.advantage3 {
+    margin: 40rem 0 0 18rem
+
+
+
+}
+  }
+
+@media (min-width: 67.5em) {
+
+.advantage3 {
+    margin: 70rem 0 0 10rem
+
+
+
+}
+  }
+
+@media (min-width: 90em) {
+
+.advantage3 {
+      margin: 70rem 0 0 20rem
+
 
 
 }
@@ -2171,28 +2338,22 @@ body {
             box-shadow: 0 1rem 3rem rgba(0,0,0, .1);
     text-align: center;
     cursor: pointer;
-
   }
 
-@media (min-width: 48em) {
+@media (min-width: 45em) {
 
 .callme__button {
-      height: 5rem;
-      width: 5rem;
-      top: 1.5rem;
+      height: 9rem;
+      width: 9rem;
+      top: 2rem;
       right: 2rem
-
   }
   }
 
 @media (min-width: 50em) {
 
 .callme__button {
-      height: 7rem;
-      width: 7rem;
-      top: 6rem;
-      right: 2.5rem
-
+      top: 6rem
   }
   }
 
@@ -2200,13 +2361,13 @@ body {
     transition:transform .8s cubic-bezier(0.86, 0, 0.07, 1); */
 
 .callme__button .contbtn {
-    background: url(../../assets/images/contacts.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 300;
-    height: 85%;
-    margin: 0.8rem 0.25rem;
-}
+      background: url(../../assets/images/contacts.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: 300;
+      height: 85%;
+      margin: 0.8rem 0.25rem;
+    }
 
 .callme__background {
     font-size: 0;
@@ -2222,19 +2383,17 @@ body {
     transition: -webkit-transform .8s cubic-bezier(0.86, 0, 0.07, 1);
     transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
     transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform .8s cubic-bezier(0.86, 0, 0.07, 1);
-
   }
 
 /* transition: transform .8s ease-in; */
 
-@media (min-width: 48em) {
+@media (min-width: 45em) {
 
 .callme__background {
-    height: 5rem;
-    width: 5rem;
-    top: 1.5rem;
-    right: 2rem
-
+      height: 8rem;
+      width: 8rem;
+      top: 2rem;
+      right: 2rem
   }
   }
 
@@ -2245,7 +2404,6 @@ body {
       width: 6rem;
       top: 6.5rem;
       right: 3.5rem
-
   }
   }
 
@@ -2255,15 +2413,20 @@ body {
     font-weight: 200;
     top: 4.75rem;
     left: 1.1rem;
-
-    }
+  }
 
 @media (min-width:20em)  {
 
 .callme .callme__txt {
       font-size: 0.42rem
+  }
+  }
 
-    }
+@media (min-width: 45em) {
+
+.callme .callme__txt {
+      top: 5.5rem
+  }
   }
 
 @media (min-width: 50em) {
@@ -2272,8 +2435,7 @@ body {
       top: 4rem;
       font-size: 0.325rem;
       left: 0.75rem
-
-    }
+  }
   }
 
 .callme__checkbox:checked~.callme__background {
@@ -2282,11 +2444,11 @@ body {
             transform: scale(4);
   }
 
-@media (min-width: 48em) {
+@media (min-width: 45em) {
 
 .callme__checkbox:checked~.callme__background {
-      -webkit-transform: scale(6);
-              transform: scale(6)
+      -webkit-transform: scale(7);
+              transform: scale(7)
   }
   }
 
@@ -2316,7 +2478,6 @@ body {
       left: 0;
       -webkit-transition: all .2s;
       transition: all .2s;
-
     }
 
 .callme__icon::before {
@@ -2327,7 +2488,7 @@ body {
       top: .8rem;
     }
 
-.callme__button:hover  {
+.callme__button:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
     -webkit-transition: -webkit-transform .2s ease-in;
