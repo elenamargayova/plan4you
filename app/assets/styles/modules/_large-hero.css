@@ -78,16 +78,17 @@
   flex-direction: column;
   align-items: center;
   justify-content:center;
+  @mixin atSmallestLandscape {
+    margin: 0rem 0 0 8rem;
+    padding: 0;
+    align-items:flex-start;
+  }
   @mixin atSmallerPortrait {
     align-items: flex-start;
     margin: 0 0 0 2.25rem;
     padding: 0;
   }
-  @mixin atSmallestLandscape {
-    margin-left: 7rem;
-    padding: 0;
-  }
-  @mixin atXSmall {
+  @mixin atXSmallPortrait {
     width: 65vw;
     padding: 5rem 0;
   }
@@ -110,12 +111,12 @@ h1 {
   @mixin atSmallestLandscape {
     margin: 0rem;
     padding: 0;
-    font-size: 2.5rem;
+    font-size: 4.5rem;
   }
-  @mixin atSmaller {
+  @mixin atSmallerPortrait {
       font-size: 6.75rem;
   }
-  @mixin atXSmall {
+  @mixin atXSmallPortrait {
       font-size: 9.75rem;
   }
 
@@ -127,20 +128,20 @@ ul {
   margin-left: 5rem;
 
   @mixin atSmallestPortrait {
-    margin: 0 0 5rem 5rem;
+    margin: 0 0 3rem 5rem;
   }
 
   @mixin atSmallestLandscape {
-    margin: 0rem;
+    margin: 0 0 0 5rem;
     padding: 0;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
   }
 
-  @mixin atSmaller {
+  @mixin atSmallerPortrait {
       font-size: 2.75rem;
   }
 
-  @mixin atXSmall{
+  @mixin atXSmallPortrait{
       font-size: 3.75rem;
       margin-left: 8rem;
   }
@@ -152,7 +153,7 @@ ul {
     /* content: "\10E6 \0020"; */
     margin: 0 1rem 0 -3.5rem;
     @mixin atSmallestLandscape {
-      margin: 0px 1rem 0 -2.5rem;
+      margin: 0px 1rem 0 -3rem;
     }
     @mixin atXSmall {
       margin: 0 2rem 0 -6.5rem;
@@ -163,6 +164,9 @@ ul {
     margin:4rem 0rem;
     @mixin atSmallestLandscape {
       margin: 2rem 0rem;
+    }
+    @mixin atSmallestPortrait {
+      margin: 3rem 0rem;
     }
     @mixin atXSmall {
       margin: 6rem 0rem;
@@ -176,7 +180,7 @@ ul {
   color: #000;
   margin-left: 3rem;
   @mixin atSmallestPortrait {
-    margin: 2rem 0 0 1.25rem;
+    margin: 0rem 0 0 1.25rem;
   }
   @mixin atSmallestLandscape {
     margin: 0 0 0 2rem;

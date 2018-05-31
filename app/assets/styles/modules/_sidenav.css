@@ -23,6 +23,9 @@
     overflow-x: hidden;
     transition: 0.5s;
     padding: 10rem 0;
+    @mixin atSmallestLandscape {
+        padding: 7.5rem 0 0 0rem;
+    }
 
 }
 
@@ -34,6 +37,10 @@
     display: block;
     transition: 0.3s;
     text-align: left;
+    @mixin atSmallestLandscape {
+      padding: 2.25rem 5rem;
+      font-size: 2.5rem;
+    }
 }
 
 .sidenav .navitem:hover:after {
@@ -52,7 +59,7 @@
     margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 1.5rem;}
-  .sidenav a {font-size: 1.8rem;}
-}
+/* @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 6.5rem;}
+  .sidenav a {font-size: 2.5rem;}
+} */

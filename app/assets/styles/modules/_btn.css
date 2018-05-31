@@ -8,14 +8,14 @@ font-size: 2.75rem;
 border: none;
 cursor: pointer;
 @mixin atSmallestLandscape {
-  font-size: 1.5rem;
-  width: 20.5rem;
-  height: 10rem;
+  font-size: 2.5rem;
+  width: 25.5rem;
+  height: 7.5rem;
 }
-@mixin atSmaller {
+@mixin atSmallerPortrait {
   font-size: 3.25rem;
 }
-@mixin atXSmall {
+@mixin atXSmallPortrait {
   width: 42.5rem;
   height: 12.5rem;
   border-radius: 1rem;
@@ -34,12 +34,12 @@ button span {
   width: 100%;
   font-size: 3.75rem;
   @mixin atSmallestLandscape {
-    font-size: 2.25rem;
+    font-size: 3rem;
   }
-  @mixin atSmaller {
+  @mixin atSmallerPortrait {
     font-size: 4.25rem;
   }
-  @mixin atXSmall {
+  @mixin atXSmallPortrait {
     font-size: 4.75rem;
   }
 }
