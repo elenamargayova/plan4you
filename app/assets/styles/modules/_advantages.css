@@ -12,44 +12,40 @@
   justify-content: space-around;
   padding: 1.5rem;
   background-image: url(../../assets/images/advantages--smaller.jpg);
-
-    @mixin atSmallPortrait {
-      background-image: url(../../assets/images/advantages--small.jpg);
-    }
-    @mixin atMediumPortrait {
-      background-image: url(../../assets/images/advantages--medium.jpg);
-    }
-    /* @mixin atLargePortrait {
-      background-image: url(../../assets/images/advantages--large.jpg);
-    } */
-    @mixin atLargerPortrait {
-      background-image: url(../../assets/images/advantages--large.jpg);
-    }
-    @mixin atLargestPortrait {
-      background-image: url(../../assets/images/advantages--largest.jpg);
-    }
-
-    @mixin atSmallerRetina {
-      background-image: url(../../assets/images/advantages--smaller-hi-dpi.jpg);
-    }
-
-    @mixin atSmallRetina {
-      background-image: url(../../assets/images/advantages--small-hi-dpi.jpg);
-    }
-    @mixin atMediumRetina {
-      background-image: url(../../assets/images/advantages--medium-hi-dpi.jpg);
-    }
-    /* @mixin atLargeRetina {
-      background-image: url(../../assets/images/advantages--large-hi-dpi.jpg);
-    } */
-    @mixin atLargerRetina {
-      background-image: url(../../assets/images/advantages--large-hi-dpi.jpg);
-    }
-    @mixin atLargestRetina {
-      background-image: url(../../assets/images/advantages--largest-hi-dpi.jpg);
-    }
-
+  @mixin atSmallPortrait {
+    background-image: url(../../assets/images/advantages--small.jpg);
   }
+  @mixin atMediumPortrait {
+    background-image: url(../../assets/images/advantages--medium.jpg);
+  }
+  /* @mixin atLargePortrait {
+      background-image: url(../../assets/images/advantages--large.jpg);
+    } */
+  @mixin atLargerPortrait {
+    background-image: url(../../assets/images/advantages--large.jpg);
+  }
+  @mixin atLargestPortrait {
+    background-image: url(../../assets/images/advantages--largest.jpg);
+  }
+  @mixin atSmallerRetina {
+    background-image: url(../../assets/images/advantages--smaller-hi-dpi.jpg);
+  }
+  @mixin atSmallRetina {
+    background-image: url(../../assets/images/advantages--small-hi-dpi.jpg);
+  }
+  @mixin atMediumRetina {
+    background-image: url(../../assets/images/advantages--medium-hi-dpi.jpg);
+  }
+  /* @mixin atLargeRetina {
+      background-image: url(../../assets/images/advantages--large-hi-dpi.jpg);
+    } */
+  @mixin atLargerRetina {
+    background-image: url(../../assets/images/advantages--large-hi-dpi.jpg);
+  }
+  @mixin atLargestRetina {
+    background-image: url(../../assets/images/advantages--largest-hi-dpi.jpg);
+  }
+}
 
 .advantage {
   font-size: 2.25rem;
@@ -58,7 +54,6 @@
   display: flex;
   align-items: center;
   line-height: 1.25;
-
   @mixin atSmallestPortrait {
     font-size: 2.85rem;
   }
@@ -72,12 +67,16 @@
     max-width: 70rem;
     line-height: 1.5;
   }
-  @mixin atXSmall{
+  @mixin atSmallerLandscape {
+    font-size: 3.5rem;
+    max-width: 90rem;
+  }
+  @mixin atXSmallPortrait {
     font-size: 5rem;
     max-width: 90rem;
   }
-  @mixin atMedium{
-    font-size: 4.25rem;
+  @mixin atMedium {
+    font-size: 4.2rem;
   }
 }
 
@@ -102,23 +101,24 @@
     width: 78vw;
     margin-right: 2rem;
   }
-  @mixin atSmall {
+  @mixin atSmallPortrait {
     width: 86vw;
   }
-  @mixin atMedium{
-      margin-right: 10rem;
-      padding-top: 4rem;
+  @mixin atMediumPortrait {
+    margin-right: 10rem;
+    padding-top: 4rem;
   }
-  @mixin atLarger{
+  @mixin atMediumLandscape {
+    margin-right: 45rem;
+  }
+  @mixin atLargerPortrait {
     width: 72vw;
     margin-right: 15rem;
   }
-  @mixin atLarger{
+  @mixin atLargerPortrait {
     width: 53vw;
     margin-right: 30rem;
   }
-
-
 }
 
 .advantage2 {
@@ -139,29 +139,41 @@
     padding: 15rem 0 0 0;
     width: 50vw;
   }
-  @mixin atSmallerPortrait{
-    height:10vh;
+  @mixin atSmallerPortrait {
+    height: 10vh;
     margin: 5rem 0 0 7rem;
   }
-  @mixin atXSmall{
+  @mixin atSmallerLandscape {
     margin: 0rem 0 0 7rem;
   }
-  @mixin atSmall{
-      padding-top: 2rem;
+  @mixin atXSmallPortrait {
+    margin: 0rem 0 0 7rem;
+    width: 90vw;
   }
-  @mixin atMedium{
-      padding-top: 8rem;
+  @mixin atXSmallLandscape {
+    padding: 35rem 0 0 0;
+    width: 46vw;
   }
-  @mixin atLarger{
-      padding-top: 35rem;
-      width: 75vw;
+  @mixin atSmallPortrait {
+    padding-top: 2rem;
   }
-  @mixin atLargest{
+  @mixin atMediumPortrait {
+    padding-top: 8rem;
+  }
+  @mixin atMediumLandscape {
+    margin: 20rem 0 0 0;
+    width: 37vw;
+  }
+
+  @mixin atLargerPortrait {
+    padding-top: 35rem;
+    width: 75vw;
+  }
+  @mixin atLargestPortrait {
     padding-top: 15rem;
     width: 55vw;
     margin: 0rem 0 0 2rem;
   }
-
 }
 
 .advantage3 {
@@ -182,21 +194,29 @@
     height: 25vh;
     margin: 27rem 0 0 7rem;
   }
-  @mixin atXSmall{
+  @mixin atSmallerLandscape {
+    margin: 0rem 0 0 0rem;
+    width: 47vw;
+  }
+  @mixin atXSmallPortrait {
+    margin: 40rem 0 0 18rem;
+    width: 87vw;
+  }
+  @mixin atSmallPortrait {
     margin: 40rem 0 0 18rem;
   }
-  @mixin atSmall{
-    margin: 40rem 0 0 18rem;
+  @mixin atMediumPortrait {
+    margin: 40rem 0 0 7rem;
   }
-  @mixin atLarger{
+  @mixin atLargerPortrait {
     margin: 70rem 0 0 10rem;
   }
-  @mixin atLargest{
-      margin: 70rem 0 0 20rem;
+  @mixin atLargestPortrait {
+    margin: 70rem 0 0 20rem;
   }
 }
 
 .advantages-btn {
-    /* margin: 35px 0px 75px 0px; */
-    margin: 2rem 0px 0rem 0px;
+  /* margin: 35px 0px 75px 0px; */
+  margin: 2rem 0px 0rem 0px;
 }

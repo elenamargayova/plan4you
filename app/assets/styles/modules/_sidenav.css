@@ -6,8 +6,10 @@
   font-size:30px;
   cursor:pointer;
   padding: 1rem 1.5rem;
-
-  @mixin atMedium {
+  @mixin atMediumLandscape {
+    display:none;
+  }
+  @mixin atXLargePortrait {
     display:none;
   }
 }

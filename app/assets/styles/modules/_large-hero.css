@@ -18,9 +18,14 @@
     background-image: url(../../assets/images/large-hero--small.jpg);
   }
   @mixin atMedium {
-    top: 2rem;
     background-image: url(../../assets/images/large-hero--medium.jpg);
   }
+    @mixin atMediumLandscape {
+      top: 2rem;
+    }
+    /* @mixin atLargePortrait {
+      top: 2rem;
+    } */
   @mixin atLarge {
     background-image: url(../../assets/images/large-hero--large.jpg);
   }
@@ -88,11 +93,17 @@
     margin: 0 0 0 2.25rem;
     padding: 0;
   }
+  @mixin atSmallerLandscape {
+    margin: 0rem 0 0 10rem;
+  }
   @mixin atXSmallPortrait {
     width: 65vw;
     padding: 5rem 0;
   }
-  @mixin atSmall {
+  @mixin atXSmallLandscape {
+    margin: 0rem 0 0 8rem;
+  }
+  @mixin atSmallPortrait {
     width: 75vw;
   }
   @mixin atMediumPortrait {
@@ -122,7 +133,10 @@ h1 {
   @mixin atSmallerPortrait {
       font-size: 6.75rem;
   }
-  @mixin atXSmallPortrait {
+  @mixin atSmallerLandscape {
+      font-size: 6rem;
+  }
+  @mixin atXSmall {
       font-size: 9.75rem;
   }
 
@@ -144,12 +158,24 @@ ul {
   }
 
   @mixin atSmallerPortrait {
-      font-size: 2.75rem;
+    font-size: 2.75rem;
+  }
+  @mixin atSmallerLandscape {
+    margin: 0rem 8rem;
+    font-size: 2.25rem;
   }
 
   @mixin atXSmallPortrait{
       font-size: 3.75rem;
       margin-left: 8rem;
+  }
+
+  @mixin atXSmallLandscape{
+    margin: 0rem 10rem;
+    font-size: 3.25rem;
+  }
+  @mixin atMediumPortrait {
+    font-size: 3.5rem;
   }
 
   li:before {
@@ -161,8 +187,14 @@ ul {
     @mixin atSmallestLandscape {
       margin: 0px 1rem 0 -3rem;
     }
-    @mixin atXSmall {
+    @mixin atSmallerLandscape {
+      margin: 0 3rem 0 -6rem;
+    }
+    @mixin atXSmallPortrait {
       margin: 0 2rem 0 -6.5rem;
+    }
+    @mixin atXSmallLandscape{
+      margin: 0 2rem 0 -6.25rem;
     }
   }
 
@@ -174,8 +206,14 @@ ul {
     @mixin atSmallestPortrait {
       margin: 3rem 0rem;
     }
-    @mixin atXSmall {
+    @mixin atSmallerLandscape {
+      margin: 3rem 0rem;
+    }
+    @mixin atXSmallPortrait {
       margin: 6rem 0rem;
+    }
+    @mixin atXSmallLandscape{
+      margin: 4rem 0rem;
     }
 
   }
@@ -191,12 +229,16 @@ ul {
   @mixin atSmallestLandscape {
     margin: 0 0 0 2rem;
   }
+  @mixin atXSmallLandscape {
+    margin: 4rem 0 0 4rem;
+  }
   @mixin atSmallPortrait {
     margin-left: 4rem;
   }
   @mixin atSmallPortrait {
     margin-left: 0rem;
   }
+
 
 }
 

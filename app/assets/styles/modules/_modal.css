@@ -35,8 +35,20 @@
     @mixin atSmallestLandscape {
       top: 52%;
     }
-    @mixin atSmaller {
+    @mixin atSmallerPortrait {
       width: 75%;
+    }
+    @mixin atSmallerLandscape {
+      width: 50%;
+    }
+    @mixin atMediumPortrait {
+      width: 75%;
+    }
+    @mixin atMediumLandscape {
+      width: 40%;
+    }
+    @mixin atLargeLandscape {
+      width: 30%;
     }
   }
   &__description {

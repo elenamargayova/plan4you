@@ -15,7 +15,7 @@ cursor: pointer;
 @mixin atSmallerPortrait {
   font-size: 3.25rem;
 }
-@mixin atXSmallPortrait {
+@mixin atXSmall{
   width: 42.5rem;
   height: 12.5rem;
   border-radius: 1rem;
@@ -39,7 +39,7 @@ button span {
   @mixin atSmallerPortrait {
     font-size: 4.25rem;
   }
-  @mixin atXSmallPortrait {
+  @mixin atXSmall {
     font-size: 4.75rem;
   }
 }

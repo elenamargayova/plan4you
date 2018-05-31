@@ -2,7 +2,6 @@
   background-image: url(../../assets/images/wrapper-main--smaller.jpg);
   display: flex;
   justify-content: flex-end;
-
   @mixin atSmallPortrait {
     background-image: url(../../assets/images/wrapper-main--small.jpg);
   }
@@ -18,11 +17,9 @@
   @mixin atLargestPortrait {
     background-image: url(../../assets/images/wrapper-main--largest.jpg);
   }
-
   @mixin atSmallerRetina {
     background-image: url(../../assets/images/wrapper-main--smaller-hi-dpi.jpg);
   }
-
   @mixin atSmallRetina {
     background-image: url(../../assets/images/wrapper-main--small-hi-dpi.jpg);
   }
@@ -38,12 +35,11 @@
   @mixin atLargestRetina {
     background-image: url(../../assets/images/wrapper-main--largest-hi-dpi.jpg);
   }
-
   @mixin atSmallest {
-    align-items:center;
+    align-items: center;
   }
   @mixin atXSmall {
-    align-items:center;
+    align-items: center;
   }
 }
 
@@ -78,9 +74,13 @@
   @mixin atSmallestLandscape {
     height: 98vh;
   }
-  @mixin atXSmall {
+  @mixin atXSmallPortrait {
+      height: 60vh;
+  }
+  @mixin atXSmallLandscape {
     height: 98vh;
   }
+
 }
 
 .wrapper {
@@ -95,7 +95,12 @@
   @mixin atSmallest {
     font-size: 1.75rem;
   }
-  @mixin atXSmall {
+  @mixin atSmallerLandscape {
+    font-size: 2.5rem;
+    bottom: 1rem;
+    left: 1rem;
+  }
+  @mixin atXSmallPortrait {
     font-size: 2.75rem;
     bottom: 2rem;
     left: 2rem;
@@ -113,7 +118,11 @@
     width: 40vh;
     height: 40vh;
   }
-  @mixin atXSmall {
+  @mixin atXSmallPortrait {
+    width: 25vh;
+    height: 25vh;
+  }
+  @mixin atXSmallLandscape {
     width: 40vh;
     height: 40vh;
   }
