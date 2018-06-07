@@ -12,19 +12,19 @@
   justify-content: space-around;
   padding: 1.5rem;
   background-image: url(../../assets/images/advantages--smaller.jpg);
-  @mixin atSmallPortrait {
+  @mixin atSmall {
     background-image: url(../../assets/images/advantages--small.jpg);
   }
-  @mixin atMediumPortrait {
+  @mixin atMedium {
     background-image: url(../../assets/images/advantages--medium.jpg);
   }
-  /* @mixin atLargePortrait {
+  /* @mixin atLarge {
       background-image: url(../../assets/images/advantages--large.jpg);
     } */
-  @mixin atLargerPortrait {
+  @mixin atLarger {
     background-image: url(../../assets/images/advantages--large.jpg);
   }
-  @mixin atLargestPortrait {
+  @mixin atLargest {
     background-image: url(../../assets/images/advantages--largest.jpg);
   }
   @mixin atSmallerRetina {

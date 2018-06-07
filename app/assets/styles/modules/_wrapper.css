@@ -2,19 +2,19 @@
   background-image: url(../../assets/images/wrapper-main--smaller.jpg);
   display: flex;
   justify-content: flex-end;
-  @mixin atSmallPortrait {
+  @mixin atSmall {
     background-image: url(../../assets/images/wrapper-main--small.jpg);
   }
-  @mixin atMediumPortrait {
+  @mixin atMedium {
     background-image: url(../../assets/images/wrapper-main--medium.jpg);
   }
-  /* @mixin atLargePortrait {
+  /* @mixin atLarge {
     background-image: url(../../assets/images/wrapper-main--large.jpg);
   } */
-  @mixin atLargerPortrait {
+  @mixin atLarger {
     background-image: url(../../assets/images/wrapper-main--large.jpg);
   }
-  @mixin atLargestPortrait {
+  @mixin atLargest {
     background-image: url(../../assets/images/wrapper-main--largest.jpg);
   }
   @mixin atSmallerRetina {
